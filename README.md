@@ -2,7 +2,7 @@
 
 Blabla bla school, bla blaa lorem ipsum 🤠🤠🤠
 
-## A project made by money gas😎
+## A project made by the gang😎
 
 ### William Saar
 
