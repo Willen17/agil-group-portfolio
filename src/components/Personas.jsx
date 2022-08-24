@@ -8,7 +8,6 @@ import Love from "../assets/Pics/Love.svg";
 function Personas() {
   return (
     <div>
-      Personas
       <div
         style={{
           display: "flex",

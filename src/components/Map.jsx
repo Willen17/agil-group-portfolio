@@ -28,7 +28,9 @@ function Map() {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <h3>Medieinstitutet Anders Personsgatan 18, 416 64 Göteborg</h3>
+        <h3 style={{ width: "13rem" }}>
+          Medieinstitutet <br /> Anders Personsgatan 18, 416 64 Göteborg
+        </h3>
       </div>
     </div>
   );

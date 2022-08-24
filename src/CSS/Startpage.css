@@ -28,7 +28,7 @@
 
 .start-page-right {
   display: flex;
-  background-color: blue;
+  background-image: url(../assets/Pics/Team.svg);
   width: 50%;
   height: 100%;
 
