@@ -1,0 +1,28 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+form input {
+  width: 30rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+form select {
+  width: 30rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+form textarea {
+  width: 30rem;
+  margin: 1rem;
+}
+
+button {
+  margin-bottom: 2rem;
+}

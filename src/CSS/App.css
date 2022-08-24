@@ -1,11 +1,24 @@
+@font-face {
+  font-family: Plajmfont;
+  src: url(../assets/Fonts/FugazOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Fredoka;
+  src: url(../assets/Fonts/Fredoka-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Plajmfont;
 }
 
 .App {
-  text-align: center;
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {

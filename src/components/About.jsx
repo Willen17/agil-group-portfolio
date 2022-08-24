@@ -1,5 +1,6 @@
 import React from "react";
-import Blob from "../assets/whoweareBlob.svg";
+import Blob from "../assets/whoweareBlobben.svg";
+import DevelopmentPic from "../assets/development.svg";
 
 export default function About() {
   return (
@@ -7,27 +8,58 @@ export default function About() {
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "space-evenly",
         height: "calc(100vh - 60px)",
-        width: "100%",
+        width: "calc(100% - 3rem)",
+        paddingLeft: "3rem",
       }}
     >
-      <div style={{}}>
-        <img src={Blob} style={{ height: "30vh" }} alt="A graphical touch" />
-        <h1 style={{ fontSize: "2rem" }}>who we are</h1>
+      <div>
+        <img src={Blob} alt="Who we are" style={{ height: "50vh" }} />
       </div>
       <div>
-        <p>We're a team of designers, strategists and storytellers</p>
+        <p style={{ fontFamily: "Fredoka", fontWeight: "lighter" }}>
+          We're a team of designers, strategists and storytellers
+        </p>
+        <p
+          style={{
+            fontFamily: "Fredoka",
+            fontWeight: "lighter",
+            fontSize: "1rem",
+          }}
+        >
+          Web design is not about making a website — it's about making an
+          investment in your organization. Successful web design takes into
+          account more than just aesthetics… It's a reflection of you, your
+          company, and your vision
+        </p>
       </div>
-      <div style={{}}>
-        <div>
-          <p>Development</p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <img
+            src={DevelopmentPic}
+            alt="Development"
+            style={{ height: "10vw" }}
+          />
+          <p style={{ fontFamily: "Fredoka" }}>Development</p>
         </div>
         <div>
-          <p>Design</p>
+          <p style={{ fontFamily: "Fredoka" }}>Design</p>
         </div>
         <div>
-          <p>Management</p>
+          <p style={{ fontFamily: "Fredoka" }}>Management</p>
         </div>
       </div>
     </div>
