@@ -1,0 +1,56 @@
+.startPageContainer {
+  height: calc(100vh - 60px);
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 4rem;
+}
+
+.startPageContainer p {
+  margin: 0;
+  font-weight: 200;
+  font-family: Fredoka;
+}
+
+.startPageContainer button {
+  margin: 1rem 0;
+  font-family: Fredoka;
+}
+
+.start-page-left {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+  width: 50%;
+}
+
+.start-page-right {
+  display: flex;
+  background-image: url(../assets/Pics/Team.svg);
+  width: 50%;
+  height: 100%;
+
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+p {
+  font-size: 1.7rem;
+  margin: 2rem;
+}
+
+button {
+  background-color: #ecad2b;
+  border: none;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  color: white;
+}
