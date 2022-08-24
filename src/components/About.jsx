@@ -8,11 +8,18 @@ export default function About() {
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 790px)").matches
   );
+  const [isSmallMobile, setIsSmallMobile] = useState(
+    window.matchMedia("(max-width: 450px)").matches
+  );
 
   useEffect(() => {
     window
       .matchMedia("(max-width: 790px)")
       .addEventListener("change", (e) => setIsMobile(e.matches));
+
+    window
+      .matchMedia("(max-width: 450px)")
+      .addEventListener("change", (e) => setIsSmallMobile(e.matches));
   }, []);
   return (
     <div
@@ -20,14 +27,15 @@ export default function About() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-evenly",
-        height: "calc(100vh + 60px )",
+        alignItems: isSmallMobile ? "center" : "initial",
+        minHeight: "calc(100vh + 60px )",
         width: "calc(100%)",
-        paddingLeft: "3rem",
+        paddingLeft: isMobile ? "0" : "3rem",
         marginBottom: "1rem",
       }}
     >
-      <div style={{ height: isMobile ? "20%" : "40%" }}>
-        <img src={Blob} alt="Who we are" style={{ height: "100%" }} />
+      <div style={{ width: isMobile ? "50vw" : "30vw" }}>
+        <img src={Blob} alt="Who we are" style={{ width: "100%" }} />
       </div>
       <div style={{ marginTop: "-5vw" }}>
         <p style={{ fontFamily: "Fredoka", fontWeight: "lighter" }}>
