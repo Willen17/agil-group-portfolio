@@ -14,10 +14,12 @@ const Login = ({ isShowLogin }) => {
             </div>
             <input type="text" name="username" placeholder="Username" />
             <input type="password" name="password" placeholder="Password" />
-            <p>Create account</p>
-            <button className="login-btn" type="submit">
-              LOGIN
-            </button>
+            <div className="align-right">
+              <p>Create account</p>
+              <button className="login-btn" type="submit">
+                LOGIN
+              </button>
+            </div>
           </form>
         </div>
       </div>
