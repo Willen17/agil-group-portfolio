@@ -12,7 +12,9 @@ import Lstack from "../assets/Stack/Lstack.png";
 
 function Personas() {
   return (
-    <div>
+    <div
+      style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
+    >
       <div
         style={{
           display: "flex",
@@ -25,6 +27,7 @@ function Personas() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            paddingLeft: "5rem",
           }}
         >
           <h3>Adam (Stefan Hawkins) Hepsever</h3>
@@ -44,6 +47,7 @@ function Personas() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            paddingLeft: "5rem",
           }}
         >
           <h3>William Arthur Saar</h3>
@@ -63,6 +67,7 @@ function Personas() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            paddingLeft: "5rem",
           }}
         >
           <h3>Jannie Bäckman Kuurne</h3>
@@ -82,6 +87,7 @@ function Personas() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            paddingLeft: "5rem",
           }}
         >
           <h3>Miranda Nilhag</h3>
@@ -101,6 +107,7 @@ function Personas() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            paddingLeft: "5rem",
           }}
         >
           <h3>Love Lanai</h3>
