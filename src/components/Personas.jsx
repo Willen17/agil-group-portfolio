@@ -1,9 +1,9 @@
 import React from "react";
-import Adam from "../assets/Pics/Adam.svg";
-import William from "../assets/Pics/William.svg";
-import Jannie from "../assets/Pics/Jannie.svg";
-import Miranda from "../assets/Pics/Miranda.svg";
-import Love from "../assets/Pics/Love.svg";
+import Adam from "../assets/Pics/Adam.png";
+import William from "../assets/Pics/William.png";
+import Jannie from "../assets/Pics/Jannie.png";
+import Miranda from "../assets/Pics/Miranda.png";
+import Love from "../assets/Pics/Love.png";
 
 function Personas() {
   return (
