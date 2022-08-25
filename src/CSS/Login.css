@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    position: fixed;
+    top: 2rem;
+    left: 20%;
 }
 
 .form-box {
@@ -10,7 +12,6 @@
     width: 75vw;
     height: 80vh;
     margin-top: 10vh;
-    opacity: 90%;
     background: white;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -20,6 +21,8 @@
     width: 15rem;
     font-family: Fredoka;
     font-size: 1.1rem;
+    border-radius: 0;
+    border: none;
 }
 
 
@@ -62,27 +65,33 @@ h3 {
 }
 
 p {
-    font-size: .8rem;
+    font-size: .9rem;
     font-family: Fredoka;
 }
 
 .logo-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-left: 40%;
+    width: 100%;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
+.logo-text img {
+    margin-right: 5%;
+}
+
 .align-right {
     margin-left: 8rem;
+    text-align: center;
 }
 
 @media (min-width: 1440px) {
     .form-box {
         width: 50vw;
-        height: 65vh;
+        height: 70vh;
         margin-top: 10vh;
-        opacity: 90%;
         background: white;
         border-radius: 20px;
         box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);

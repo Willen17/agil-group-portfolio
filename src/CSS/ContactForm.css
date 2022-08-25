@@ -1,14 +1,10 @@
-h2 {
-  position: relative;
-  left: 35%;
-}
-
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+  width: 100%;
 }
 
 form input {
@@ -47,9 +43,4 @@ button {
     flex-direction: column;
   }
 
-  h2 {
-    font-size: 3rem;
-    position: relative;
-    left: 40%;
-  }
 }

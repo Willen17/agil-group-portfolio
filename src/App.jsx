@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header.jsx";
 import StartPage from "./components/StartPage.jsx";
 import About from "./components/About.jsx";
@@ -18,6 +18,10 @@ function App() {
   const handleLoginClick = () => {
     setIsShowLogin((isShowLogin) => !isShowLogin);
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [isShowLogin]);
 
   return (
     <div className="App">
