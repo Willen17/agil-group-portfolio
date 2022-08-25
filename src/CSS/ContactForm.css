@@ -4,7 +4,7 @@ form {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 100vw;
+  width: 100%;
 }
 
 form input {
