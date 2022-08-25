@@ -1,11 +1,11 @@
 import React from "react";
 import "../CSS/Personas.css";
-import Adam from "../assets/Pics/Adam.svg";
-import William from "../assets/Pics/William.svg";
-import Jannie from "../assets/Pics/Jannie.svg";
-import Miranda from "../assets/Pics/Miranda.svg";
-import Love from "../assets/Pics/Love.svg";
-import BillGates from "../assets/Bill gates.svg";
+import Adam from "../assets/Pics/Adam.png";
+import William from "../assets/Pics/William.png";
+import Jannie from "../assets/Pics/Jannie.png";
+import Miranda from "../assets/Pics/Miranda.png";
+import Love from "../assets/Pics/Love.png";
+import BillGates from "../assets/Bill gates.png";
 
 import adobe from "../assets/Skills-icons/Adobe.svg";
 import bootstrap from "../assets/Skills-icons/Bootstrap.svg";
