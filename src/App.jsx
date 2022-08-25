@@ -2,7 +2,7 @@ import Header from "./components/Header.jsx";
 import StartPage from "./components/StartPage.jsx";
 import About from "./components/About.jsx";
 import Personas from "./components/Personas";
-import Quote from "./components/Quote.jsx";
+
 import Skills from "./components/Skills.jsx";
 import Map from "./components/Map.jsx";
 import Footer from "./components/Footer.jsx";
@@ -16,9 +16,13 @@ function App() {
         <Header />
         <StartPage />
       </section>
-      <section>
-        <About />
-      </section>
+
+      <div>
+        <section>
+          <About />
+        </section>
+      </div>
+
       <section>
         <Personas />
       </section>

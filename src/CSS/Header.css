@@ -72,7 +72,6 @@
   }
 
   .extended-nav {
-    position: fixed;
     z-index: 1;
     background-color: #dd6f69;
     width: 100%;
@@ -82,15 +81,5 @@
     justify-content: center;
     color: white;
     padding: 0.5rem 0;
-    animation: slideDown 0.2s ease-in-out forwards;
-  }
-
-  @keyframes slideDown {
-    0% {
-      top: 0;
-    }
-    100% {
-      top: 60px;
-    }
   }
 }

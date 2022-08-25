@@ -15,7 +15,6 @@ import css from "../assets/Skills-icons/Css.svg";
 import html5 from "../assets/Skills-icons/Html 5.svg";
 import mongodb from "../assets/Skills-icons/MongoDB.svg";
 import mui from "../assets/Skills-icons/MUI.svg";
-import nodejs from "../assets/Skills-icons/NODE JS.svg";
 import react from "../assets/Skills-icons/React.svg";
 import typescript from "../assets/Skills-icons/TS.svg";
 import javascript from "../assets/Skills-icons/JS.svg";
@@ -23,7 +22,10 @@ import javascript from "../assets/Skills-icons/JS.svg";
 function Personas() {
   return (
     <div>
-      <section>
+      <section style={{ position: "relative" }}>
+        <div className="persona-header">
+          <h1>Our Crew</h1>
+        </div>
         <div className="personas-containers">
           <div className="persona">
             <div className="persona-image">
@@ -35,19 +37,27 @@ function Personas() {
               <span> Stack</span>
               <ul>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={react}></img>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={typescript}></img>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={javascript}></img>
+                  <img
+                    alt="javascript"
+                    style={{ height: "100%" }}
+                    src={javascript}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={html5}></img>
+                  <img alt="html5" style={{ height: "100%" }} src={html5}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={adobe}></img>
+                  <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
                 </li>
               </ul>
             </ul>
@@ -62,19 +72,23 @@ function Personas() {
               <span> Stack</span>
               <ul>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={react}></img>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={typescript}></img>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={mui}></img>
+                  <img alt="mui" style={{ height: "100%" }} src={mui}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={figma}></img>
+                  <img alt="figma" style={{ height: "100%" }} src={figma}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={adobe}></img>
+                  <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
                 </li>
               </ul>
             </ul>
@@ -94,19 +108,23 @@ function Personas() {
               <span> Stack</span>
               <ul>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={react}></img>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={typescript}></img>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={html5}></img>
+                  <img alt="html5" style={{ height: "100%" }} src={html5}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={css}></img>
+                  <img alt="css" style={{ height: "100%" }} src={css}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={figma}></img>
+                  <img alt="figma" style={{ height: "100%" }} src={figma}></img>
                 </li>
               </ul>
             </ul>
@@ -121,19 +139,35 @@ function Personas() {
               <span> Stack</span>
               <ul>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={react}></img>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={typescript}></img>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={javascript}></img>
+                  <img
+                    alt="javascript"
+                    style={{ height: "100%" }}
+                    src={javascript}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={firebase}></img>
+                  <img
+                    alt="firebase"
+                    style={{ height: "100%" }}
+                    src={firebase}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={bootstrap}></img>
+                  <img
+                    alt="bootstrap"
+                    style={{ height: "100%" }}
+                    src={bootstrap}
+                  ></img>
                 </li>
               </ul>
             </ul>
@@ -153,19 +187,27 @@ function Personas() {
               <span> Stack</span>
               <ul>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={react}></img>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={typescript}></img>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={mongodb}></img>
+                  <img
+                    alt="mongodb"
+                    style={{ height: "100%" }}
+                    src={mongodb}
+                  ></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={css}></img>
+                  <img alt="css" style={{ height: "100%" }} src={css}></img>
                 </li>
                 <li style={{ height: "3rem" }}>
-                  <img style={{ height: "100%" }} src={adobe}></img>
+                  <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
                 </li>
               </ul>
             </ul>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../CSS/Header.css";
 import burger from "../assets/Header/burgermenu.svg";
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
 function Header() {
   const [nav, setNav] = useState(false);
 
@@ -15,7 +15,7 @@ function Header() {
   };
 
   return (
-    <Element name="start">
+    <>
       <div className="header">
         <div>
           <Link
@@ -105,7 +105,7 @@ function Header() {
       ) : (
         <></>
       )}
-    </Element>
+    </>
   );
 }
 
