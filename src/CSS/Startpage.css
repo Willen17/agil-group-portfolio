@@ -22,7 +22,6 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-
   width: 50%;
 }
 
@@ -31,7 +30,7 @@
   background-image: url(../assets/Pics/Team.svg);
   width: 50%;
   height: 100%;
-
+  background-repeat: no-repeat;
   align-items: center;
   align-content: center;
 }
