@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import "../CSS/Header.css";
 import burger from "../assets/Header/burgermenu.svg";
 import { Link, Element } from "react-scroll";
-function Header() {
+import profile from "../assets/profile.png";
+
+function Header({ handleLoginClick }) {
+  const handleClick = () => {
+    handleLoginClick();
+  };
+
   const [nav, setNav] = useState(false);
 
   const shownav = () => {
@@ -100,6 +106,14 @@ function Header() {
             >
               <li>Contact</li>
             </Link>
+            <li>
+              <img
+                onClick={handleClick}
+                src={profile}
+                alt="profileicon"
+                style={{ width: "25px" }}
+              ></img>
+            </li>
           </ul>
         </div>
       ) : (
