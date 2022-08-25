@@ -14,9 +14,9 @@ function App() {
     <div class="App">
       <Header />
       <StartPage />
+      <Quote />
       <About />
       <Personas />
-      <Quote />
       <Skills />
       <ContactForm />
       <Map />
