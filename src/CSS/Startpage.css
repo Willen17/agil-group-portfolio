@@ -22,12 +22,15 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
+
 }
 
 .start-page-right {
   display: flex;
 
+
   height: 100%;
+
   align-items: center;
   align-content: center;
 }
