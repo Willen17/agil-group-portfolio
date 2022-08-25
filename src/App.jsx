@@ -11,16 +11,32 @@ import "./CSS/App.css";
 
 function App() {
   return (
-    <div class="App">
-      <Header />
-      <StartPage />
-      <About />
-      <Personas />
-      <Quote />
-      <Skills />
-      <ContactForm />
-      <Map />
-      <Footer />
+    <div className="App">
+      <section>
+        <Header />
+        <StartPage />
+      </section>
+      <section>
+        <About />
+      </section>
+      <section>
+        <Personas />
+      </section>
+      <section>
+        <Quote />
+      </section>
+      <section>
+        <Skills />
+      </section>
+      <section>
+        <ContactForm />
+      </section>
+      <section>
+        <Map />
+      </section>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 }

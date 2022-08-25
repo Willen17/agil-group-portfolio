@@ -28,9 +28,9 @@ export default function About() {
         style={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-evenly",
+
           alignItems: isSmallMobile ? "center" : "initial",
-          minHeight: "calc(100vh + 60px )",
+          minHeight: "100vh",
           width: "calc(100%)",
           paddingLeft: isMobile ? "0" : "3rem",
           marginBottom: "1rem",

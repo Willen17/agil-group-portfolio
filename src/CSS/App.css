@@ -17,8 +17,16 @@
 
 .App {
   background-image: url("../assets/background.png");
-  background-repeat: no-repeat;
+
   background-size: cover;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+  background-repeat: repeat-y;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 .App-logo {

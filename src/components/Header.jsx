@@ -6,7 +6,7 @@ function Header() {
   const [nav, setNav] = useState(false);
 
   const shownav = () => {
-    if (nav == false) {
+    if (nav === false) {
       setNav(true);
     } else {
       setNav(false);
