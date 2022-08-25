@@ -105,15 +105,15 @@ function Header({ handleLoginClick }) {
               to="contact"
             >
               <li>Contact</li>
-              <li>
-                <img
-                  onClick={handleClick}
-                  src={profile}
-                  alt="profileicon"
-                  style={{ width: "25px" }}
-                />
-              </li>
             </Link>
+            <li>
+              <img
+                onClick={handleClick}
+                src={profile}
+                alt="profileicon"
+                style={{ width: "25px" }}
+              />
+            </li>
           </ul>
         </div>
       ) : (
