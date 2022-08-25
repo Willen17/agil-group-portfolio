@@ -22,9 +22,7 @@ function App() {
       <section>
         <Personas />
       </section>
-      <section>
-        <Quote />
-      </section>
+
       <section>
         <Skills />
       </section>

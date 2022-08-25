@@ -5,6 +5,7 @@ import William from "../assets/Pics/William.svg";
 import Jannie from "../assets/Pics/Jannie.svg";
 import Miranda from "../assets/Pics/Miranda.svg";
 import Love from "../assets/Pics/Love.svg";
+import BillGates from "../assets/Bill gates.svg";
 
 import adobe from "../assets/Skills-icons/Adobe.svg";
 import bootstrap from "../assets/Skills-icons/Bootstrap.svg";
@@ -23,47 +24,16 @@ function Personas() {
   return (
     <div>
       <section>
-        <div
-          className="personas-first-page"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-
-            justifyContent: "center",
-            minHeight: "100vh",
-          }}
-        >
-          <div
-            className="Adam"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            <div style={{ height: "20rem" }}>
+        <div className="personas-containers">
+          <div className="persona">
+            <div className="persona-image">
               <img style={{ height: "100%" }} alt="profile" src={Adam}></img>
             </div>
-            <ul
-              style={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-              }}
-            >
+            <ul className="persona-content">
               <h3>Adam (Stefan Hawkins) Hepsever</h3>
               <span> Frontend Developer</span>
               <span> Stack</span>
-              <ul
-                style={{
-                  listStyle: "none",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "18rem",
-                  marginTop: "0.5rem",
-                }}
-              >
+              <ul>
                 <li style={{ height: "3rem" }}>
                   <img style={{ height: "100%" }} src={react}></img>
                 </li>
@@ -82,37 +52,15 @@ function Personas() {
               </ul>
             </ul>
           </div>
-          <div
-            className="William"
-            style={{
-              display: "flex",
-              flexDirection: "row-reverse",
-              alignItems: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            <div style={{ height: "20rem" }}>
+          <div className="persona-flipped">
+            <div className="persona-image">
               <img style={{ height: "100%" }} alt="profile" src={William}></img>
             </div>
-            <ul
-              style={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-              }}
-            >
+            <ul className="persona-content">
               <h3>William Arthur Saar</h3>
               <span> Frontend Developer</span>
               <span> Stack</span>
-              <ul
-                style={{
-                  listStyle: "none",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "18rem",
-                  marginTop: "0.5rem",
-                }}
-              >
+              <ul>
                 <li style={{ height: "3rem" }}>
                   <img style={{ height: "100%" }} src={react}></img>
                 </li>
@@ -135,47 +83,16 @@ function Personas() {
       </section>
 
       <section>
-        <div
-          className="personas-first-page"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-
-            justifyContent: "center",
-            height: "100vh",
-          }}
-        >
-          <div
-            className="Jannie"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            <div style={{ height: "20rem" }}>
+        <div className="personas-containers">
+          <div className="persona">
+            <div className="persona-image">
               <img style={{ height: "100%" }} alt="profile" src={Jannie}></img>
             </div>
-            <ul
-              style={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-              }}
-            >
+            <ul className="persona-content">
               <h3>Jannie Bäckman Kuurne</h3>
               <span> Frontend Developer</span>
               <span> Stack</span>
-              <ul
-                style={{
-                  listStyle: "none",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "18rem",
-                  marginTop: "0.5rem",
-                }}
-              >
+              <ul>
                 <li style={{ height: "3rem" }}>
                   <img style={{ height: "100%" }} src={react}></img>
                 </li>
@@ -194,37 +111,15 @@ function Personas() {
               </ul>
             </ul>
           </div>
-          <div
-            className="Miranda"
-            style={{
-              display: "flex",
-              flexDirection: "row-reverse",
-              alignItems: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            <div style={{ height: "20rem" }}>
+          <div className="persona-flipped">
+            <div className="persona-image">
               <img style={{ height: "100%" }} alt="profile" src={Miranda}></img>
             </div>
-            <ul
-              style={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-              }}
-            >
+            <ul className="persona-content">
               <h3>Miranda Nilhag</h3>
               <span> Frontend Developer</span>
               <span> Stack</span>
-              <ul
-                style={{
-                  listStyle: "none",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "18rem",
-                  marginTop: "0.5rem",
-                }}
-              >
+              <ul>
                 <li style={{ height: "3rem" }}>
                   <img style={{ height: "100%" }} src={react}></img>
                 </li>
@@ -247,47 +142,16 @@ function Personas() {
       </section>
 
       <section>
-        <div
-          className="personas-third-page"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-
-            justifyContent: "center",
-            height: "100vh",
-          }}
-        >
-          <div
-            className="Love"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            <div style={{ height: "20rem" }}>
+        <div className="personas-containers">
+          <div className="persona">
+            <div className="persona-image">
               <img style={{ height: "100%" }} alt="profile" src={Love}></img>
             </div>
-            <ul
-              style={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-              }}
-            >
+            <ul className="persona-content">
               <h3>Love Lanai</h3>
               <span> Super Senior Frontend Developer</span>
               <span> Stack</span>
-              <ul
-                style={{
-                  listStyle: "none",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "18rem",
-                  marginTop: "0.5rem",
-                }}
-              >
+              <ul>
                 <li style={{ height: "3rem" }}>
                   <img style={{ height: "100%" }} src={react}></img>
                 </li>
@@ -304,6 +168,14 @@ function Personas() {
                   <img style={{ height: "100%" }} src={adobe}></img>
                 </li>
               </ul>
+            </ul>
+          </div>
+          <div className="billgates">
+            <div className="persona-image">
+              <img style={{ height: "100%" }} alt="BillGates" src={BillGates} />
+            </div>
+            <ul>
+              <ul></ul>
             </ul>
           </div>
         </div>
