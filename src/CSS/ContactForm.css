@@ -31,16 +31,10 @@ button {
   margin-bottom: 2rem;
 }
 
-
 @media (min-width: 1440px) {
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-  }
 
   form {
     display: flex;
     flex-direction: column;
   }
-
 }

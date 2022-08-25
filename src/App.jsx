@@ -28,9 +28,9 @@ function App() {
       <Header handleLoginClick={handleLoginClick} />
       <Login isShowLogin={isShowLogin} />
       <StartPage />
+      <Quote />
       <About />
       <Personas />
-      <Quote />
       <Skills />
       <ContactForm />
       <Map />

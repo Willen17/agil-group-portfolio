@@ -1,10 +1,21 @@
 import React from "react";
-import BillGates from "../assets/BillGates.png";
+import BillGates from "../assets/Bill-gates-quote.svg";
 
 function Quote() {
   return (
-    <div>
-      <img alt="BillGates" src={BillGates} />
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <img
+        style={{ width: "50%", marginTop: "-11%", marginBottom: "-11%" }}
+        alt="BillGates"
+        src={BillGates}
+      />
     </div>
   );
 }
