@@ -31,37 +31,31 @@ function Header() {
         <div className="header-desktop">
           <ul>
             <li>
-              <Link
-                onClick={shownav}
-                spy={true}
-                smooth={true}
-                duration={300}
-                to="about"
+              <a
+                onClick={() =>
+                  document.getElementById("about").scrollIntoView()
+                }
               >
                 About us
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                onClick={shownav}
-                spy={true}
-                smooth={true}
-                duration={300}
-                to="competences"
+              <a
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView()
+                }
               >
                 Competences
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                onClick={shownav}
-                spy={true}
-                smooth={true}
-                duration={300}
-                to="contact"
+              <a
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView()
+                }
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -73,33 +67,35 @@ function Header() {
       {nav ? (
         <div className="extended-nav">
           <ul>
-            <Link
-              onClick={shownav}
-              spy={true}
-              smooth={true}
-              duration={300}
-              to="about"
-            >
-              <li>About us</li>
-            </Link>
-            <Link
-              onClick={shownav}
-              spy={true}
-              smooth={true}
-              duration={300}
-              to="competences"
-            >
-              <li>Competences</li>
-            </Link>
-            <Link
-              onClick={shownav}
-              spy={true}
-              smooth={true}
-              duration={300}
-              to="contact"
-            >
-              <li>Contact</li>
-            </Link>
+            <li>
+              <a
+                onClick={() =>
+                  document.getElementById("about").scrollIntoView()
+                }
+              >
+                About us
+              </a>
+            </li>
+
+            <li>
+              <a
+                onClick={() =>
+                  document.getElementById("competences").scrollIntoView()
+                }
+              >
+                Competences
+              </a>
+            </li>
+
+            <li>
+              <a
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView()
+                }
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       ) : (

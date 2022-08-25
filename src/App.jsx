@@ -17,20 +17,18 @@ function App() {
         <StartPage />
       </section>
 
-      <div>
-        <section>
-          <About />
-        </section>
-      </div>
+      <section id="about">
+        <About />
+      </section>
 
       <section>
         <Personas />
       </section>
 
-      <section>
+      <section id="competences">
         <Skills />
       </section>
-      <section>
+      <section id="contact">
         <ContactForm />
       </section>
       <section>
