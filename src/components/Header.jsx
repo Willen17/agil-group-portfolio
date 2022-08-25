@@ -69,6 +69,14 @@ function Header({ handleLoginClick }) {
                 Contact
               </Link>
             </li>
+            <li>
+              <img
+                onClick={handleClick}
+                src={profile}
+                alt="profileicon"
+                style={{ width: "25px" }}
+              ></img>
+            </li>
           </ul>
         </div>
         <div className="burger">
