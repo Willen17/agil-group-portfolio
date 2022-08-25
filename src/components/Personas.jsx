@@ -1,14 +1,4 @@
 import React from "react";
-import Adam from "../assets/Pics/Adam.svg";
-import William from "../assets/Pics/William.svg";
-import Jannie from "../assets/Pics/Jannie.svg";
-import Miranda from "../assets/Pics/Miranda.svg";
-import Love from "../assets/Pics/Love.svg";
-import Astack from "../assets/Stack/Astack.png";
-import Wstack from "../assets/Stack/Wstack.png";
-import Jstack from "../assets/Stack/Jstack.png";
-import Mstack from "../assets/Stack/Mstack.png";
-import Lstack from "../assets/Stack/Lstack.png";
 
 function Personas() {
   return (

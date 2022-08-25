@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   padding: 0rem 4rem;
+  justify-content: space-between;
 }
 
 .startPageContainer p {
@@ -22,12 +23,10 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-
 }
 
 .start-page-right {
   display: flex;
-
 
   height: 100%;
 
