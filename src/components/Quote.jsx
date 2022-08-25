@@ -12,7 +12,7 @@ function Quote() {
       }}
     >
       <img
-        style={{ width: "50%", marginTop: "-15%" }}
+        style={{ width: "50%", marginTop: "-11%", marginBottom: "-11%" }}
         alt="BillGates"
         src={BillGates}
       />
