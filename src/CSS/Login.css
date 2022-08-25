@@ -1,0 +1,86 @@
+* {
+    font-family: Fredoka;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box {
+    width: 50vw;
+    margin-top: 10vh;
+    opacity: 90%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-box input {
+    width: 20rem;
+    font-family: Fredoka;
+    font-size: 1.1rem;
+}
+
+
+.login-btn {
+    justify-content: center;
+    align-items: center;
+    background-color: #ECAD2B;
+    color: white;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15pt;
+    font-weight: 700;
+    transition: 1s;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.login-btn:hover {
+    transform: scale(1.03);
+    letter-spacing: 4px;
+    background-color: #DD6F69;
+    color: white;
+}
+
+.show {
+    display: block;
+    transition: 800ms;
+    opacity: 1;
+}
+
+.show.active {
+    transform: translateY(100px) scale(0) rotateY(180deg);
+    opacity: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: Fredoka;
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: Fredoka;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
