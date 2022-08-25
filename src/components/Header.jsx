@@ -112,7 +112,7 @@ function Header({ handleLoginClick }) {
                 src={profile}
                 alt="profileicon"
                 style={{ width: "25px" }}
-              />
+              ></img>
             </li>
           </ul>
         </div>
