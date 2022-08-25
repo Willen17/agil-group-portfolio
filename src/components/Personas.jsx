@@ -12,13 +12,12 @@ import Lstack from "../assets/Stack/Lstack.png";
 
 function Personas() {
   return (
-    <div
-      style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
-    >
+    <div style={{ marginLeft: "5rem", marginRight: "5rem" }}>
       <div
         style={{
           display: "flex",
           alignItems: "center",
+          flexWrap: "wrap",
         }}
       >
         <img alt="profile" src={Adam}></img>
@@ -39,6 +38,8 @@ function Personas() {
         style={{
           display: "flex",
           alignItems: "center",
+          flexDirection: "row-reverse",
+          flexWrap: "wrap",
         }}
       >
         <img alt="profile" src={William}></img>
@@ -59,6 +60,7 @@ function Personas() {
         style={{
           display: "flex",
           alignItems: "center",
+          flexWrap: "wrap",
         }}
       >
         <img alt="profile" src={Jannie}></img>
@@ -79,6 +81,8 @@ function Personas() {
         style={{
           display: "flex",
           alignItems: "center",
+          flexDirection: "row-reverse",
+          flexWrap: "wrap",
         }}
       >
         <img alt="profile" src={Miranda}></img>
@@ -87,7 +91,7 @@ function Personas() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            paddingLeft: "5rem",
+            paddingRight: "5rem",
           }}
         >
           <h3>Miranda Nilhag</h3>
@@ -99,6 +103,7 @@ function Personas() {
         style={{
           display: "flex",
           alignItems: "center",
+          flexWrap: "wrap",
         }}
       >
         <img alt="profile" src={Love}></img>
