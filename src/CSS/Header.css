@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   background-color: white;
   height: 60px;
   position: fixed;
@@ -7,8 +7,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
   padding: 0 1rem;
   color: black;
+  box-shadow: 0 1px 2px -2px gray;
+}
+
+.header h2 {
+  cursor: pointer;
+}
+
+.extended-nav {
+  display: none;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger img {
+  height: 1.5rem;
+  cursor: pointer;
 }
 
 .header ul {
@@ -19,6 +40,18 @@
   font-family: Fredoka;
   list-style: none;
   padding: 0 1rem;
+  cursor: pointer;
+}
+
+.extended-nav ul {
+  display: flex;
+}
+
+.extended-nav li {
+  font-family: Fredoka;
+  list-style: none;
+  padding: 0 1rem;
+  cursor: pointer;
 }
 
 .header-desktop {
@@ -36,5 +69,28 @@
 
   .header-desktop {
     display: none;
+  }
+
+  .extended-nav {
+    position: fixed;
+    z-index: 1;
+    background-color: #dd6f69;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.5rem 0;
+    animation: slideDown 0.2s ease-in-out forwards;
+  }
+
+  @keyframes slideDown {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 60px;
+    }
   }
 }

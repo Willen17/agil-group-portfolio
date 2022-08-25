@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/Startpage.css";
+import team from "../assets/Pics/Team.svg";
 
 function StartPage() {
   return (
@@ -10,7 +11,9 @@ function StartPage() {
         <p>OH YEAH!</p>
         <button>Read more</button>
       </div>
-      <div className="start-page-right"></div>
+      <div className="start-page-right">
+        <img style={{ width: "100%" }} src={team}></img>
+      </div>
     </div>
   );
 }

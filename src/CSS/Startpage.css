@@ -22,15 +22,15 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  width: 50%;
+
 }
 
 .start-page-right {
   display: flex;
-  background-image: url(../assets/Pics/Team.svg);
-  width: 50%;
+
+
   height: 100%;
-  background-repeat: no-repeat;
+
   align-items: center;
   align-content: center;
 }
@@ -52,4 +52,10 @@ button {
   border-radius: 20px;
   font-size: 1.4rem;
   color: white;
+}
+
+@media (max-width: 800px) {
+  .startPageContainer {
+    flex-direction: column;
+  }
 }
