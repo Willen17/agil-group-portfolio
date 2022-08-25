@@ -50,3 +50,9 @@ button {
   font-size: 1.4rem;
   color: white;
 }
+
+@media (max-width: 800px) {
+  .startPageContainer {
+    flex-direction: column;
+  }
+}
