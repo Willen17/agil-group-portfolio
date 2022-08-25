@@ -26,8 +26,8 @@ function App() {
 
   return (
     <div className="App">
-      <section>
-        <Header handleLoginClick={handleLoginClick} />
+      <section id="start">
+        <Header handleLoginClick={handleLoginClick}></Header>
         <Login isShowLogin={isShowLogin} />
         <StartPage />
       </section>

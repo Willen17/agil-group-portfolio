@@ -5,7 +5,7 @@ import William from "../assets/Pics/William.png";
 import Jannie from "../assets/Pics/Jannie.png";
 import Miranda from "../assets/Pics/Miranda.png";
 import Love from "../assets/Pics/Love.png";
-import BillGates from "../assets/Bill gates.png";
+import BillGates from "../assets/Bill gates.svg";
 
 import adobe from "../assets/Skills-icons/Adobe.svg";
 import bootstrap from "../assets/Skills-icons/Bootstrap.svg";

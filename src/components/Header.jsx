@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "../CSS/Header.css";
 import burger from "../assets/Header/burgermenu.svg";
-import { Link } from "react-scroll";
+
 import profile from "../assets/profile.png";
 
-function Header({ handleLoginClick }) {
+export default function Header({ handleLoginClick }) {
   const handleClick = () => {
     handleLoginClick();
   };
 
-function Header() {
   const [nav, setNav] = useState(false);
 
   const shownav = () => {
@@ -25,15 +24,9 @@ function Header() {
     <>
       <div className="header">
         <div>
-          <Link
-            onClick={shownav}
-            spy={true}
-            smooth={true}
-            duration={300}
-            to="start"
-          >
+          <a onClick={() => document.getElementById("start").scrollIntoView()}>
             <h2>Plajm</h2>
-          </Link>
+          </a>
         </div>
         <div className="header-desktop">
           <ul>
@@ -119,5 +112,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;
