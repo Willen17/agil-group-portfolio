@@ -1,6 +1,7 @@
 import Fast from "../assets/Skills 3 icons/Blazing-fast.svg";
 import MobileFirst from "../assets/Skills 3 icons/Mobile-first.svg";
 import Learning from "../assets/Skills 3 icons/Learning.svg";
+import "../CSS/Skills.css";
 
 import React from "../assets/Skills-icons/React.svg";
 import MongoDB from "../assets/Skills-icons/MongoDB.svg";
@@ -123,31 +124,70 @@ function Skills() {
           justifyItems: "center",
         }}
       >
-        <img src={React} alt="React" style={imageStyling} />
-        <img src={MongoDB} alt="MongoDB" style={imageStyling} />
+        <img
+          src={React}
+          alt="React"
+          style={imageStyling}
+          className="skills-logo"
+        />
+        <img
+          src={MongoDB}
+          alt="MongoDB"
+          style={imageStyling}
+          className="skills-logo"
+        />
 
-        <img src={TS} alt="Typescript" style={imageStyling} />
-        <img src={Html5} alt="Html5" style={imageStyling} />
+        <img
+          src={TS}
+          alt="Typescript"
+          style={imageStyling}
+          className="skills-logo"
+        />
+        <img
+          src={Html5}
+          alt="Html5"
+          style={imageStyling}
+          className="skills-logo"
+        />
 
-        <img src={Adobe} alt="Adobe" style={imageStyling} />
-        <img src={Firebase} alt="Firebase" style={imageStyling} />
+        <img
+          src={Adobe}
+          alt="Adobe"
+          style={imageStyling}
+          className="skills-logo"
+        />
+        <img
+          src={Firebase}
+          alt="Firebase"
+          style={imageStyling}
+          className="skills-logo"
+        />
 
-        <img src={NodeJS} alt="NodeJS" style={imageStyling} />
-        <img src={Bootstrap} alt="Bootstrap" style={imageStyling} />
+        <img
+          src={NodeJS}
+          alt="NodeJS"
+          style={imageStyling}
+          className="skills-logo"
+        />
+        <img
+          src={Bootstrap}
+          alt="Bootstrap"
+          style={imageStyling}
+          className="skills-logo"
+        />
 
         <img
           src={MUI}
           alt="Material UI"
-          style={{
-            height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw",
-            transition: " all .2s ease-in-out",
-            transform: isHovering ? "scale(1.1)" : "",
-            cursor: isHovering ? "pointer" : "initial",
-          }}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          style={imageStyling}
+          className="skills-logo"
         />
-        <img src={Figma} alt="Figma" style={imageStyling} />
+        <img
+          src={Figma}
+          alt="Figma"
+          style={imageStyling}
+          className="skills-logo"
+        />
       </div>
     </div>
   );
