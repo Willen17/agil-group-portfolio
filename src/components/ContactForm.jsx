@@ -4,6 +4,10 @@ import { Element } from "react-scroll";
 
 function ContactForm() {
   const [developer, setDeveloper] = useState([]);
+
+  const handleDeveloper = (e) => {
+    setDeveloper(e.target.value);
+  };
   return (
     <Element name="contact">
       <div className="contact-form">
@@ -11,8 +15,9 @@ function ContactForm() {
         <form action="submit">
           <select
             value={developer}
-            onChange={(e) => setDeveloper(e.target.value)}
+            onChange={handleDeveloper}
             required
+            multiple
           >
             <option value="Choose a developer">Choose a developer</option>
             <option value="adam">Adam</option>
@@ -23,7 +28,7 @@ function ContactForm() {
           </select>
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
-          <textarea cols="30" rows="10"></textarea>
+          <textarea></textarea>
           <button type="submit">SEND</button>
         </form>
       </div>
