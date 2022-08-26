@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/Header.css";
 import burger from "../assets/Header/burgermenu.svg";
-
 import profile from "../assets/profile.png";
 
 export default function Header({ handleLoginClick }) {
