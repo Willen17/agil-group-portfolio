@@ -1,0 +1,134 @@
+.container-fluid {
+  width: 3rem;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  right: 0;
+}
+
+.dotnav {
+  padding: 0;
+  list-style: none;
+  font-size: 0.001px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dotnav > li {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.dotnav > li > a {
+  display: inline-block;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #dd6f6a;
+  vertical-align: top;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -999%;
+}
+
+.dotnav > li > a:hover,
+.dotnav > li > a:focus {
+  background: #dd6f6a;
+  outline: none;
+}
+
+.dotnav > li > a:active {
+  background: #dd6f6a;
+}
+
+.dotnav > li.active > a {
+  background: #dd6f6a;
+}
+
+.dotnav-vertical > li {
+  display: block;
+  margin: 10px 0;
+}
+
+.dotnav-vertical > li:nth-child(n + 2) {
+  margin-left: 0;
+}
+
+.nav-tooltip + .tooltip > .tooltip-inner {
+  background-color: #dd6f6a;
+  color: #fff;
+  border: 1px solid #dd6f6a;
+}
+
+.nav-tooltip + .tooltip.left > .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #dd6f6a;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+/** Mobile **/
+
+.dotnav-mobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.dotnav-mobile > li {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.dotnav-mobile > li > a {
+  display: inline-block;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #dd6f6a;
+  vertical-align: top;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -999%;
+}
+
+.dotnav-mobile > li > a:hover,
+.dotnav-mobile > li > a:focus {
+  background: #dd6f6a;
+  outline: none;
+}
+
+.dotnav-mobile > li > a:active {
+  background: #dd6f6a;
+}
+
+.dotnav-mobile > li.active > a {
+  background: #dd6f6a;
+}
+
+.dotnav-vertical-mobile > li {
+  display: block;
+  margin: 0 5px;
+}

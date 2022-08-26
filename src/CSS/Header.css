@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 20;
   padding: 0 1rem;
   color: black;
   box-shadow: 0 1px 2px -2px gray;
@@ -72,7 +72,7 @@
   }
 
   .extended-nav {
-    z-index: 1;
+    z-index: 10;
     background-color: #dd6f69;
     width: 100%;
     left: 0;
