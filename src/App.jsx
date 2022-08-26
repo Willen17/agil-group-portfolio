@@ -3,7 +3,7 @@ import StartPage from "./components/StartPage.jsx";
 import About from "./components/About.jsx";
 import Personas from "./components/Personas";
 import React, { useState, useEffect } from "react";
-
+import Navigation from "components/Navigation.jsx";
 import Skills from "./components/Skills.jsx";
 import Map from "./components/Map.jsx";
 import Footer from "./components/Footer.jsx";
@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navigation />
       <section id="start">
         <Header handleLoginClick={handleLoginClick}></Header>
         <Login isShowLogin={isShowLogin} />
