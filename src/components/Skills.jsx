@@ -14,26 +14,31 @@ import Bootstrap from "../assets/Skills-icons/Bootstrap.svg";
 import MUI from "../assets/Skills-icons/MUI.svg";
 import Figma from "../assets/Skills-icons/Figma.svg";
 
+import { CustomDialog } from "./SkillsModal";
+
 import { useState, useEffect } from "react";
 
 function Skills() {
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 790px)").matches
   );
-
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
-
   const [isMedium, setIsMedium] = useState(
     window.matchMedia("(max-width: 1200px)").matches
   );
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [dialogTitle, setDialogTitle] = useState("");
+  const [imgElement, setImageElement] = useState();
+
+  const handleOpenDialog = (e) => {
+    setDialogTitle(e.target.alt);
+    setImageElement(e.target.currentSrc);
+    setIsOpen(true);
+  };
+
+  const handleCloseDialog = () => {
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     window
@@ -65,6 +70,13 @@ function Skills() {
         marginBottom: "10vw",
       }}
     >
+      <CustomDialog
+        isOpen={isOpen}
+        handleClose={handleCloseDialog}
+        title={dialogTitle}
+      >
+        <img src={imgElement} alt={dialogTitle} style={{ height: "8vw" }} />
+      </CustomDialog>
       <p style={{ fontFamily: "Fredoka", fontSize: "3rem" }}>SKILLS</p>
       <div
         style={{
@@ -129,12 +141,14 @@ function Skills() {
           alt="React"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
         <img
           src={MongoDB}
           alt="MongoDB"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
 
         <img
@@ -142,38 +156,44 @@ function Skills() {
           alt="Typescript"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
         <img
           src={Html5}
           alt="Html5"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
 
         <img
           src={Adobe}
-          alt="Adobe"
+          alt="Adobe Creative Cloud"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
         <img
           src={Firebase}
           alt="Firebase"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
 
         <img
           src={NodeJS}
-          alt="NodeJS"
+          alt="Node.js"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
         <img
           src={Bootstrap}
           alt="Bootstrap"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
 
         <img
@@ -181,12 +201,14 @@ function Skills() {
           alt="Material UI"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
         <img
           src={Figma}
           alt="Figma"
           style={imageStyling}
           className="skills-logo"
+          onClick={(e) => handleOpenDialog(e)}
         />
       </div>
     </div>
