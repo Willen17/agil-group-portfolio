@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Map() {
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 790px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 790px)")
+      .addEventListener("change", (e) => setIsMobile(e.matches));
+  }, []);
+
   return (
     <div
       style={{
@@ -16,21 +26,21 @@ function Map() {
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
+          width: isMobile ? "95%" : "40%",
+          boxShadow:
+            "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
         }}
       >
         <iframe
           title="map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8525.578559256055!2d11.9945328!3d57.709754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb3f902b63916df6!2sMedieinstitutet!5e0!3m2!1ssv!2sse!4v1661347035939!5m2!1ssv!2sse"
-          width="600"
-          height="450"
+          width="100%"
+          height="500"
           style={{ border: 0 }}
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <h3 style={{ width: "13rem" }}>
-          Medieinstitutet <br /> Anders Personsgatan 18, 416 64 Göteborg
-        </h3>
       </div>
     </div>
   );
