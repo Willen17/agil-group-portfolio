@@ -62,11 +62,7 @@ function Skills() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-evenly",
-        height: isMedium
-          ? isMobile
-            ? "180vh"
-            : "150vh"
-          : "calc(100vh - 60px)",
+        height: isMedium ? (isMobile ? "180vh" : "150vh") : "auto",
         marginBottom: "10vw",
       }}
     >
@@ -87,7 +83,7 @@ function Skills() {
         }}
       >
         <div style={{ textAlign: "center", width: !isMobile ? "25%" : "90%" }}>
-          <img src={Fast} alt="Blazing fast" />
+          <img src={Fast} alt="Blazing fast" style={{ height: "45%" }} />
           <p
             style={{
               fontFamily: "Fredoka",
@@ -99,7 +95,7 @@ function Skills() {
           </p>
         </div>
         <div style={{ textAlign: "center", width: !isMobile ? "25%" : "90%" }}>
-          <img src={MobileFirst} alt="Mobile first" />
+          <img src={MobileFirst} alt="Mobile first" style={{ height: "45%" }} />
           <p
             style={{
               fontFamily: "Fredoka",
@@ -111,7 +107,7 @@ function Skills() {
           </p>
         </div>
         <div style={{ textAlign: "center", width: !isMobile ? "25%" : "90%" }}>
-          <img src={Learning} alt="Always learning" />
+          <img src={Learning} alt="Always learning" style={{ height: "45%" }} />
           <p
             style={{
               fontFamily: "Fredoka",
