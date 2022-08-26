@@ -21,18 +21,24 @@ import javascript from "../assets/Skills-icons/JS.svg";
 
 function Personas() {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h1>Our Crew</h1>
       <section style={{ position: "relative" }}>
-        <div className="persona-header">
-          <h1>Our Crew</h1>
-        </div>
+        <div className="persona-header"></div>
         <div className="personas-containers">
           <div className="persona">
             <div className="persona-image">
               <img style={{ height: "100%" }} alt="profile" src={Adam}></img>
             </div>
             <ul className="persona-content">
-              <h3>Adam (Stefan Hawkins) Hepsever</h3>
+              <h3>Adam Hepsever</h3>
               <span> Frontend Developer</span>
               <span> Stack</span>
               <ul>
