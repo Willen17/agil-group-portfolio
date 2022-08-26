@@ -20,6 +20,16 @@ function Skills() {
     window.matchMedia("(max-width: 790px)").matches
   );
 
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
+
   const [isMedium, setIsMedium] = useState(
     window.matchMedia("(max-width: 1200px)").matches
   );
@@ -33,6 +43,11 @@ function Skills() {
       .matchMedia("(max-width: 1200px)")
       .addEventListener("change", (e) => setIsMedium(e.matches));
   }, []);
+
+  const imageStyling = {
+    height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw",
+    transition: " all .2s ease-in-out",
+  };
 
   return (
     <div
@@ -108,60 +123,31 @@ function Skills() {
           justifyItems: "center",
         }}
       >
-        <img
-          src={React}
-          alt="React"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
-        <img
-          src={MongoDB}
-          alt="MongoDB"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
+        <img src={React} alt="React" style={imageStyling} />
+        <img src={MongoDB} alt="MongoDB" style={imageStyling} />
 
-        <img
-          src={TS}
-          alt="Typescript"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
-        <img
-          src={Html5}
-          alt="Html5"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
+        <img src={TS} alt="Typescript" style={imageStyling} />
+        <img src={Html5} alt="Html5" style={imageStyling} />
 
-        <img
-          src={Adobe}
-          alt="Adobe"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
-        <img
-          src={Firebase}
-          alt="Firebase"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
+        <img src={Adobe} alt="Adobe" style={imageStyling} />
+        <img src={Firebase} alt="Firebase" style={imageStyling} />
 
-        <img
-          src={NodeJS}
-          alt="NodeJS"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
-        <img
-          src={Bootstrap}
-          alt="Bootstrap"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
+        <img src={NodeJS} alt="NodeJS" style={imageStyling} />
+        <img src={Bootstrap} alt="Bootstrap" style={imageStyling} />
 
         <img
           src={MUI}
           alt="Material UI"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
+          style={{
+            height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw",
+            transition: " all .2s ease-in-out",
+            transform: isHovering ? "scale(1.1)" : "",
+            cursor: isHovering ? "pointer" : "initial",
+          }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         />
-        <img
-          src={Figma}
-          alt="Figma"
-          style={{ height: isMedium ? (isMobile ? "20vw" : "12vw") : "8vw" }}
-        />
+        <img src={Figma} alt="Figma" style={imageStyling} />
       </div>
     </div>
   );
