@@ -93,7 +93,7 @@ export const CustomDialog = ({
           }}
         >
           {children}
-          <p style={{ fontFamily: "Fredoka" }}>{title}</p>
+          <p style={{ fontFamily: "Fredoka", fontSize: "1.4rem" }}>{title}</p>
         </div>
 
         <DialogContent>
