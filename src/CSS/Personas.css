@@ -1,0 +1,89 @@
+.persona-header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.persona-header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.personas-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.persona {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.persona-flipped {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.billgates {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.persona-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.persona-content ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  margin-top: 0.5rem;
+}
+
+.persona-image {
+  height: 20rem;
+}
+
+.billgates ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .billgates ul {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .personas-containers {
+    justify-content: space-around;
+  }
+  .persona {
+    flex-direction: column;
+  }
+
+  .persona-flipped {
+    flex-direction: column;
+  }
+
+  .persona-image {
+    height: 13rem;
+  }
+}

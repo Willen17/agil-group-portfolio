@@ -1,11 +1,10 @@
 .startPageContainer {
-  height: calc(100vh - 60px);
-  width: 100%;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   padding: 0rem 4rem;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .startPageContainer p {
@@ -19,19 +18,71 @@
   font-family: Fredoka;
 }
 
+.start-page-left h1 {
+  margin: 0;
+}
+
+.start-page-left p {
+  margin: 0.5rem 0;
+}
+
 .start-page-left {
   flex-direction: column;
   display: flex;
   justify-content: center;
+  position: relative;
+  width: 50%;
+}
+
+.start-page-left ul {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    position: absolute;
+    left: -35rem;
+    opacity: 0%;
+  }
+  100% {
+    position: absolute;
+    left: 0;
+    opacity: 100%;
+  }
+}
+
+.team {
+  height: 100%;
+  display: flex;
+
+  animation: intro 1.2s ease-in-out;
+}
+
+@keyframes intro {
+  0% {
+    position: absolute;
+    top: -1rem;
+    opacity: 0%;
+  }
+
+  90% {
+    position: absolute;
+    top: 0rem;
+  }
+
+  100% {
+    position: absolute;
+    top: 0rem;
+    opacity: 100%;
+  }
 }
 
 .start-page-right {
-  display: flex;
+  position: relative;
+  width: 50%;
 
   height: 100%;
-
-  align-items: center;
-  align-content: center;
+  display: flex;
 }
 
 h1 {
@@ -54,7 +105,17 @@ button {
 }
 
 @media (max-width: 800px) {
+  .start-page-right {
+    display: none;
+  }
+
   .startPageContainer {
-    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .start-page-left {
+    width: 100%;
+    text-align: center;
   }
 }

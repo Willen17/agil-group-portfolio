@@ -1,12 +1,7 @@
 import React from "react";
-import { Element } from "react-scroll";
 
 function Skills() {
-  return (
-    <Element name="competences">
-      <div>Skills</div>
-    </Element>
-  );
+  return <div>Skills</div>;
 }
 
 export default Skills;

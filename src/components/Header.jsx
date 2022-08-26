@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../CSS/Header.css";
 import burger from "../assets/Header/burgermenu.svg";
-import { Link, Element } from "react-scroll";
+
 import profile from "../assets/profile.png";
 
-function Header({ handleLoginClick }) {
+export default function Header({ handleLoginClick }) {
   const handleClick = () => {
     handleLoginClick();
   };
@@ -12,7 +12,7 @@ function Header({ handleLoginClick }) {
   const [nav, setNav] = useState(false);
 
   const shownav = () => {
-    if (nav == false) {
+    if (nav === false) {
       setNav(true);
     } else {
       setNav(false);
@@ -21,53 +21,41 @@ function Header({ handleLoginClick }) {
   };
 
   return (
-    <Element name="start">
+    <>
       <div className="header">
         <div>
-          <Link
-            onClick={shownav}
-            spy={true}
-            smooth={true}
-            duration={300}
-            to="start"
-          >
+          <a onClick={() => document.getElementById("start").scrollIntoView()}>
             <h2>Plajm</h2>
-          </Link>
+          </a>
         </div>
         <div className="header-desktop">
           <ul>
             <li>
-              <Link
-                onClick={shownav}
-                spy={true}
-                smooth={true}
-                duration={300}
-                to="about"
+              <a
+                onClick={() =>
+                  document.getElementById("about").scrollIntoView()
+                }
               >
                 About us
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                onClick={shownav}
-                spy={true}
-                smooth={true}
-                duration={300}
-                to="competences"
+              <a
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView()
+                }
               >
                 Competences
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                onClick={shownav}
-                spy={true}
-                smooth={true}
-                duration={300}
-                to="contact"
+              <a
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView()
+                }
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -79,33 +67,35 @@ function Header({ handleLoginClick }) {
       {nav ? (
         <div className="extended-nav">
           <ul>
-            <Link
-              onClick={shownav}
-              spy={true}
-              smooth={true}
-              duration={300}
-              to="about"
-            >
-              <li>About us</li>
-            </Link>
-            <Link
-              onClick={shownav}
-              spy={true}
-              smooth={true}
-              duration={300}
-              to="competences"
-            >
-              <li>Competences</li>
-            </Link>
-            <Link
-              onClick={shownav}
-              spy={true}
-              smooth={true}
-              duration={300}
-              to="contact"
-            >
-              <li>Contact</li>
-            </Link>
+            <li>
+              <a
+                onClick={() =>
+                  document.getElementById("about").scrollIntoView()
+                }
+              >
+                About us
+              </a>
+            </li>
+
+            <li>
+              <a
+                onClick={() =>
+                  document.getElementById("competences").scrollIntoView()
+                }
+              >
+                Competences
+              </a>
+            </li>
+
+            <li>
+              <a
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView()
+                }
+              >
+                Contact
+              </a>
+            </li>
             <li>
               <img
                 onClick={handleClick}
@@ -119,8 +109,6 @@ function Header({ handleLoginClick }) {
       ) : (
         <></>
       )}
-    </Element>
+    </>
   );
 }
-
-export default Header;

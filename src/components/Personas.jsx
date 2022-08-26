@@ -1,126 +1,227 @@
 import React from "react";
-import Astack from "../assets/Stack/Astack.png";
-import Jstack from "../assets/Stack/Jstack.png";
-import Lstack from "../assets/Stack/Lstack.png";
-import Mstack from "../assets/Stack/Mstack.png";
-import Wstack from "../assets/Stack/Wstack.png";
-
+import "../CSS/Personas.css";
 import Adam from "../assets/Pics/Adam.png";
-import Jannie from "../assets/Pics/Jannie.png";
-import Love from "../assets/Pics/Love.png";
-import Miranda from "../assets/Pics/Miranda.png";
 import William from "../assets/Pics/William.png";
+import Jannie from "../assets/Pics/Jannie.png";
+import Miranda from "../assets/Pics/Miranda.png";
+import Love from "../assets/Pics/Love.png";
+import BillGates from "../assets/Bill gates.svg";
+
+import adobe from "../assets/Skills-icons/Adobe.svg";
+import bootstrap from "../assets/Skills-icons/Bootstrap.svg";
+import firebase from "../assets/Skills-icons/Firebase.svg";
+import figma from "../assets/Skills-icons/Figma.svg";
+import css from "../assets/Skills-icons/Css.svg";
+import html5 from "../assets/Skills-icons/Html 5.svg";
+import mongodb from "../assets/Skills-icons/MongoDB.svg";
+import mui from "../assets/Skills-icons/MUI.svg";
+import react from "../assets/Skills-icons/React.svg";
+import typescript from "../assets/Skills-icons/TS.svg";
+import javascript from "../assets/Skills-icons/JS.svg";
 
 function Personas() {
   return (
-    <div style={{ marginLeft: "5rem", marginRight: "5rem" }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <img alt="profile" src={Adam}></img>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingLeft: "5rem",
-          }}
-        >
-          <h3>Adam (Stefan Hawkins) Hepsever</h3>
-          <span> Frontend Developer</span>
-          <img alt="stack" src={Astack}></img>
+    <div>
+      <section style={{ position: "relative" }}>
+        <div className="persona-header">
+          <h1>Our Crew</h1>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "row-reverse",
-          flexWrap: "wrap",
-        }}
-      >
-        <img alt="profile" src={William}></img>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingLeft: "5rem",
-          }}
-        >
-          <h3>William Arthur Saar</h3>
-          <span> Frontend Developer</span>
-          <img alt="stack" src={Wstack}></img>
+        <div className="personas-containers">
+          <div className="persona">
+            <div className="persona-image">
+              <img style={{ height: "100%" }} alt="profile" src={Adam}></img>
+            </div>
+            <ul className="persona-content">
+              <h3>Adam (Stefan Hawkins) Hepsever</h3>
+              <span> Frontend Developer</span>
+              <span> Stack</span>
+              <ul>
+                <li style={{ height: "3rem" }}>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="javascript"
+                    style={{ height: "100%" }}
+                    src={javascript}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="html5" style={{ height: "100%" }} src={html5}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div className="persona-flipped">
+            <div className="persona-image">
+              <img style={{ height: "100%" }} alt="profile" src={William}></img>
+            </div>
+            <ul className="persona-content">
+              <h3>William Arthur Saar</h3>
+              <span> Frontend Developer</span>
+              <span> Stack</span>
+              <ul>
+                <li style={{ height: "3rem" }}>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="mui" style={{ height: "100%" }} src={mui}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="figma" style={{ height: "100%" }} src={figma}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
+                </li>
+              </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <img alt="profile" src={Jannie}></img>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingLeft: "5rem",
-          }}
-        >
-          <h3>Jannie Bäckman Kuurne</h3>
-          <span> Frontend Developer</span>
-          <img alt="stack" src={Jstack}></img>
+      </section>
+
+      <section>
+        <div className="personas-containers">
+          <div className="persona">
+            <div className="persona-image">
+              <img style={{ height: "100%" }} alt="profile" src={Jannie}></img>
+            </div>
+            <ul className="persona-content">
+              <h3>Jannie Bäckman Kuurne</h3>
+              <span> Frontend Developer</span>
+              <span> Stack</span>
+              <ul>
+                <li style={{ height: "3rem" }}>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="html5" style={{ height: "100%" }} src={html5}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="css" style={{ height: "100%" }} src={css}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="figma" style={{ height: "100%" }} src={figma}></img>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div className="persona-flipped">
+            <div className="persona-image">
+              <img style={{ height: "100%" }} alt="profile" src={Miranda}></img>
+            </div>
+            <ul className="persona-content">
+              <h3>Miranda Nilhag</h3>
+              <span> Frontend Developer</span>
+              <span> Stack</span>
+              <ul>
+                <li style={{ height: "3rem" }}>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="javascript"
+                    style={{ height: "100%" }}
+                    src={javascript}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="firebase"
+                    style={{ height: "100%" }}
+                    src={firebase}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="bootstrap"
+                    style={{ height: "100%" }}
+                    src={bootstrap}
+                  ></img>
+                </li>
+              </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "row-reverse",
-          flexWrap: "wrap",
-        }}
-      >
-        <img alt="profile" src={Miranda}></img>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingRight: "5rem",
-          }}
-        >
-          <h3>Miranda Nilhag</h3>
-          <span> Frontend Developer</span>
-          <img alt="stack" src={Mstack}></img>
+      </section>
+
+      <section>
+        <div className="personas-containers">
+          <div className="persona">
+            <div className="persona-image">
+              <img style={{ height: "100%" }} alt="profile" src={Love}></img>
+            </div>
+            <ul className="persona-content">
+              <h3>Love Lanai</h3>
+              <span> Super Senior Frontend Developer</span>
+              <span> Stack</span>
+              <ul>
+                <li style={{ height: "3rem" }}>
+                  <img alt="react" style={{ height: "100%" }} src={react}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="typescript"
+                    style={{ height: "100%" }}
+                    src={typescript}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img
+                    alt="mongodb"
+                    style={{ height: "100%" }}
+                    src={mongodb}
+                  ></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="css" style={{ height: "100%" }} src={css}></img>
+                </li>
+                <li style={{ height: "3rem" }}>
+                  <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div className="billgates">
+            <div className="persona-image">
+              <img style={{ height: "100%" }} alt="BillGates" src={BillGates} />
+            </div>
+            <ul>
+              <ul></ul>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <img alt="profile" src={Love}></img>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingLeft: "5rem",
-          }}
-        >
-          <h3>Love Lanai</h3>
-          <span> Super Senior Frontend Developer</span>
-          <img alt="stack" src={Lstack}></img>
-        </div>
-      </div>
+      </section>
     </div>
   );
 }

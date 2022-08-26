@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../CSS/ContactForm.css";
-import { Element } from "react-scroll";
 
 function ContactForm() {
   const [developer, setDeveloper] = useState([]);
@@ -9,7 +8,7 @@ function ContactForm() {
     setDeveloper(e.target.value);
   };
   return (
-    <Element name="contact">
+
       <div className="contact-form">
         <h2>CONTACT US</h2>
         <form action="submit">
@@ -32,7 +31,7 @@ function ContactForm() {
           <button type="submit">SEND</button>
         </form>
       </div>
-    </Element>
+
   );
 }
 
