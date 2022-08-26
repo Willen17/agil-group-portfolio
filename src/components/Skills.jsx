@@ -1,6 +1,6 @@
-import Fast from "../assets/Skills 3 icons/Blazing-fast.svg";
-import MobileFirst from "../assets/Skills 3 icons/Mobile-first.svg";
-import Learning from "../assets/Skills 3 icons/Learning.svg";
+import Fast from "../assets/Skills-3-icons/Blazing-fast.svg";
+import MobileFirst from "../assets/Skills-3-icons/Mobile-first.svg";
+import Learning from "../assets/Skills-3-icons/Learning.svg";
 import "../CSS/Skills.css";
 
 import React from "../assets/Skills-icons/React.svg";
