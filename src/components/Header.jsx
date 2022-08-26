@@ -24,7 +24,11 @@ export default function Header({ handleLoginClick }) {
     <>
       <div className="header">
         <div>
-          <a onClick={() => document.getElementById("start").scrollIntoView()}>
+          <a
+            onClick={() => document.getElementById("start").scrollIntoView()}
+            href="/#start"
+            style={{ textDecoration: "none", color: "#18112C" }}
+          >
             <h2>Plajm</h2>
           </a>
         </div>
@@ -35,6 +39,8 @@ export default function Header({ handleLoginClick }) {
                 onClick={() =>
                   document.getElementById("about").scrollIntoView()
                 }
+                href="/#about"
+                style={{ textDecoration: "none", color: "#18112C" }}
               >
                 About us
               </a>
@@ -42,8 +48,10 @@ export default function Header({ handleLoginClick }) {
             <li>
               <a
                 onClick={() =>
-                  document.getElementById("contact").scrollIntoView()
+                  document.getElementById("competences").scrollIntoView()
                 }
+                href="/#competences"
+                style={{ textDecoration: "none", color: "#18112C" }}
               >
                 Competences
               </a>
@@ -53,6 +61,8 @@ export default function Header({ handleLoginClick }) {
                 onClick={() =>
                   document.getElementById("contact").scrollIntoView()
                 }
+                href="/#contact"
+                style={{ textDecoration: "none", color: "#18112C" }}
               >
                 Contact
               </a>
@@ -75,6 +85,8 @@ export default function Header({ handleLoginClick }) {
                 onClick={() =>
                   document.getElementById("about").scrollIntoView()
                 }
+                href="/#about"
+                style={{ textDecoration: "none", color: "#18112C" }}
               >
                 About us
               </a>
@@ -85,6 +97,8 @@ export default function Header({ handleLoginClick }) {
                 onClick={() =>
                   document.getElementById("competences").scrollIntoView()
                 }
+                href="/#competences"
+                style={{ textDecoration: "none", color: "#18112C" }}
               >
                 Competences
               </a>
@@ -95,6 +109,8 @@ export default function Header({ handleLoginClick }) {
                 onClick={() =>
                   document.getElementById("contact").scrollIntoView()
                 }
+                href="/#contact"
+                style={{ textDecoration: "none", color: "#18112C" }}
               >
                 Contact
               </a>

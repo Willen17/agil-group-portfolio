@@ -12,7 +12,7 @@ import bootstrap from "../assets/Skills-icons/Bootstrap.svg";
 import firebase from "../assets/Skills-icons/Firebase.svg";
 import figma from "../assets/Skills-icons/Figma.svg";
 import css from "../assets/Skills-icons/Css.svg";
-import html5 from "../assets/Skills-icons/Html 5.svg";
+import html5 from "../assets/Skills-icons/Html5.svg";
 import mongodb from "../assets/Skills-icons/MongoDB.svg";
 import mui from "../assets/Skills-icons/MUI.svg";
 import react from "../assets/Skills-icons/React.svg";
