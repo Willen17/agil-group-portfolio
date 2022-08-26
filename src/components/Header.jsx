@@ -57,6 +57,9 @@ export default function Header({ handleLoginClick }) {
                 Contact
               </a>
             </li>
+            <li>
+              <img src={profile} alt="profileicon" style={{ width: "25px" }} />
+            </li>
           </ul>
         </div>
         <div className="burger">
