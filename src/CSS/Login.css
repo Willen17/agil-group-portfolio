@@ -5,6 +5,7 @@
     position: fixed;
     top: 2.4rem;
     left: 12.5%;
+    z-index: 3000;
 }
 
 .form-box {

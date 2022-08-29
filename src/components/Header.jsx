@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../CSS/Header.css";
 import burger from "../assets/Header/burgermenu.svg";
-
 import profile from "../assets/profile.png";
+import profileDesktop from "../assets/profileDesktop.png";
 
 export default function Header({ handleLoginClick }) {
   const handleClick = () => {
@@ -68,7 +68,12 @@ export default function Header({ handleLoginClick }) {
               </a>
             </li>
             <li>
-              <img src={profile} alt="profileicon" style={{ width: "25px" }} />
+              <img
+                onClick={handleClick}
+                src={profileDesktop}
+                alt="profileDesktopicon"
+                style={{ width: "25px" }}
+              />
             </li>
           </ul>
         </div>
