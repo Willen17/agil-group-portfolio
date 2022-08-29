@@ -38,14 +38,20 @@ export default function About() {
         <img src={Blob} alt="Who we are" style={{ width: "100%" }} />
       </div>
       <div style={{ marginTop: "-5vw" }}>
-        <p style={{ fontFamily: "Fredoka", fontWeight: "lighter" }}>
+        <p
+          style={{
+            fontFamily: "Fredoka",
+            fontWeight: "lighter",
+            fontSize: "1.6rem",
+          }}
+        >
           We're a team of designers, strategists and storytellers
         </p>
         <p
           style={{
             fontFamily: "Fredoka",
             fontWeight: "lighter",
-            fontSize: "1.2rem",
+            fontSize: "1.8rem",
             width: isMobile ? "90%" : "70%",
           }}
         >
