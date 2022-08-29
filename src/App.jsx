@@ -14,21 +14,21 @@ import "./CSS/App.css";
 import "./CSS/Login.css";
 
 function App() {
-  const [isShowLogin, setIsShowLogin] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleLoginClick = () => {
-    setIsShowLogin((isShowLogin) => !isShowLogin);
+    setIsOpen(true);
   };
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [isShowLogin]);
+  }, [isOpen]);
 
   return (
     <div className="App">
       <section id="start">
         <Header handleLoginClick={handleLoginClick}></Header>
-        <Login isShowLogin={isShowLogin} />
+        <Login isOpen={isOpen} />
         <StartPage />
       </section>
 
