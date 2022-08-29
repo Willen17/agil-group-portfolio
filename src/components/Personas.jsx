@@ -93,7 +93,11 @@ function Personas() {
               <p
                 onClick={handleOpenDialog}
                 className="Adam"
-                style={{ margin: "1rem 0", cursor: "pointer" }}
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
               >
                 Read more about Adam
               </p>
@@ -131,7 +135,11 @@ function Personas() {
               <p
                 onClick={handleOpenDialog}
                 className="William"
-                style={{ margin: "1rem 0", cursor: "pointer" }}
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
               >
                 Read more about William
               </p>
@@ -180,7 +188,11 @@ function Personas() {
               <p
                 onClick={handleOpenDialog}
                 className="Jannie"
-                style={{ margin: "1rem 0", cursor: "pointer" }}
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
               >
                 Read more about Jannie
               </p>
@@ -230,7 +242,11 @@ function Personas() {
               <p
                 onClick={handleOpenDialog}
                 className="Miranda"
-                style={{ margin: "1rem 0", cursor: "pointer" }}
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
               >
                 Read more about Miranda
               </p>
@@ -283,7 +299,11 @@ function Personas() {
               <p
                 onClick={handleOpenDialog}
                 className="Love"
-                style={{ margin: "1rem 0", cursor: "pointer" }}
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
               >
                 What is Love
               </p>

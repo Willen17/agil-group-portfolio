@@ -100,7 +100,14 @@ const infoText = [
     name: "Love",
     img: Love,
     text: (
-      <p style={{ fontFamily: "Fredoka", fontSize: "1rem", margin: "0" }}>
+      <p
+        style={{
+          fontFamily: "Fredoka",
+          fontSize: "1rem",
+          margin: "0",
+          transition: " all .2s ease-in-out",
+        }}
+      >
         Love is a top tier coding engineer with more than 20 years in the
         industry. If you want the job done, he's your guy! From building the
         entire google-platform on a commondore-64, to create apple.com,
