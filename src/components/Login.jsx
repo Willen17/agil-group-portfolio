@@ -6,16 +6,16 @@ const Login = ({ isShowLogin }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [signUp, setSignUp] = useState(false);
   const [toggleSignup, setToggleSignup] = useState(false);
-  const [items, setItems] = useState([]);
+  const [userDetails, setuserDetails] = useState([]);
 
   useEffect(() => {
-    localStorage.setItem("items", JSON.stringify(items));
-  }, [items]);
+    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+  }, [userDetails]);
 
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("items"));
-    if (items) {
-      setItems(items);
+    const userDetails = JSON.parse(localStorage.getItem("userDetails"));
+    if (userDetails) {
+      setuserDetails(userDetails);
     }
   }, [isLoggedIn]);
 
@@ -38,7 +38,7 @@ const Login = ({ isShowLogin }) => {
   };
 
   // const handleSignOut = () => {
-  //   localStorage.removeItem("items");
+  //   localStorage.removeItem("userDetails");
   // };
 
   return (
