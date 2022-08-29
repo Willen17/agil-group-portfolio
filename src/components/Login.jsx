@@ -45,9 +45,9 @@ const Login = ({ isShowLogin }) => {
     setToggleSignup(true);
   };
 
-  // const handleSignOut = () => {
-  //   localStorage.removeItem("userDetails");
-  // };
+  const handleSignOut = () => {
+    localStorage.removeItem("userDetails");
+  };
 
   return (
     <>
@@ -55,7 +55,7 @@ const Login = ({ isShowLogin }) => {
         <div className={`${!isShowLogin ? "active" : ""} show`}>
           <div className="login-form">
             <div className="form-box">
-              <form onSubmit={handleSignup}>
+              <form onSubmit={handleLogin}>
                 <div className="logo-text">
                   <img src={login} alt="loginicon" style={{ width: "50px" }} />
                   <h3>Log In</h3>
@@ -91,7 +91,7 @@ const Login = ({ isShowLogin }) => {
         <div className={`${!isShowLogin ? "active" : ""} show`}>
           <div className="login-form">
             <div className="form-box">
-              <form>
+              <form onSubmit={handleSignup}>
                 <div className="logo-text">
                   <img src={login} alt="loginicon" style={{ width: "50px" }} />
                   <h3>Sign up</h3>
@@ -129,7 +129,7 @@ const Login = ({ isShowLogin }) => {
           </div>
         </div>
       )}
-      {/* {!isLoggedIn ? (
+      {isLoggedIn ? (
         <div className="login-form">
           <div className="form-box">
             <form>
@@ -159,7 +159,7 @@ const Login = ({ isShowLogin }) => {
             </form>
           </div>
         </div>
-      ) : null} */}
+      ) : null}
     </>
   );
 };
