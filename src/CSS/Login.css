@@ -118,4 +118,12 @@ p {
     .align-right {
         margin-left: 10rem;
     }
+
+    /* .close {
+        position: absolute;
+        top: 2;
+        right: 10%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    } */
 }

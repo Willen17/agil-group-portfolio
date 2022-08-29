@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import "../CSS/Login.css";
 import login from "../assets/login.png";
 
-const Login = ({ isShowLogin }) => {
+const Login = ({ isOpen }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [signUp, setSignUp] = useState(false);
   const [toggleSignup, setToggleSignup] = useState(false);
+
   const [user, setUser] = useState(() => {
     const saved = localStorage.getItem("user");
     const initialValue = JSON.parse(saved);
@@ -25,13 +26,17 @@ const Login = ({ isShowLogin }) => {
     localStorage.setItem("newUser", JSON.stringify(newUser));
   }, [newUser]);
 
+  if (!isOpen) return null;
+
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log(user);
+    console.log(user + " signed in");
     setIsLoggedIn(true);
   };
 
-  const handleSignup = () => {
+  const handleSignup = (e) => {
+    e.preventDefault();
+    console.log("signed up");
     setSignUp(true);
   };
 
@@ -47,12 +52,19 @@ const Login = ({ isShowLogin }) => {
 
   const handleSignOut = () => {
     localStorage.removeItem("userDetails");
+    console.log("signed out!");
+    setIsLoggedIn(false);
   };
+
+  // const handleClose = () => {
+  //   isOpen(false);
+  //   console.log("closed popup");
+  // };
 
   return (
     <>
       {!toggleSignup ? (
-        <div className={`${!isShowLogin ? "active" : ""} show`}>
+        <div className={`${!isOpen ? "active" : ""} show`}>
           <div className="login-form">
             <div className="form-box">
               <form onSubmit={handleLogin}>
@@ -88,7 +100,7 @@ const Login = ({ isShowLogin }) => {
           </div>
         </div>
       ) : (
-        <div className={`${!isShowLogin ? "active" : ""} show`}>
+        <div className={`${!isOpen ? "active" : ""} show`}>
           <div className="login-form">
             <div className="form-box">
               <form onSubmit={handleSignup}>
@@ -135,6 +147,16 @@ const Login = ({ isShowLogin }) => {
             <form>
               <div className="logo-text">
                 <h3 style={{ fontFamily: "Plajmfont" }}>Plajm</h3>
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    color: "black",
+                  }}
+                >
+                  <h3 className="close" onClick={() => !isOpen}>
+                    X
+                  </h3>
+                </button>
               </div>
               <h3>Welcome back!</h3>
               <p>
