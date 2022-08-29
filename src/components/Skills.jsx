@@ -62,7 +62,7 @@ function Skills() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-evenly",
-        height: isMedium ? (isMobile ? "180vh" : "150vh") : "auto",
+        height: isMedium ? (isMobile ? "210vh" : "150vh") : "auto",
         marginBottom: "10vw",
       }}
     >
@@ -119,94 +119,112 @@ function Skills() {
           </p>
         </div>
       </div>
-      <p style={{ fontFamily: "Fredoka", fontSize: "1.8rem" }}>
-        Click a skill to learn more
-      </p>
-      <div
+
+      <section
         style={{
-          display: "grid",
-          gridTemplateColumns: !isMedium ? "1fr 1fr 1fr 1fr 1fr" : "1fr 1fr",
-
-          gap: "2rem 4rem",
-
-          justifyItems: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "space-evenly",
+          // height: isMedium ? (isMobile ? "210vh" : "150vh") : "auto",
+          marginBottom: "10vw",
         }}
       >
-        <img
-          src={React}
-          alt="React"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
-        <img
-          src={MongoDB}
-          alt="MongoDB"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
+        <p
+          style={{
+            fontFamily: "Fredoka",
+            fontSize: "1.8rem",
+            textAlign: "center",
+          }}
+        >
+          Click a skill to learn more
+        </p>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: !isMedium ? "1fr 1fr 1fr 1fr 1fr" : "1fr 1fr",
 
-        <img
-          src={TS}
-          alt="Typescript"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
-        <img
-          src={Html5}
-          alt="Html5"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
+            gap: "2rem 4rem",
 
-        <img
-          src={Adobe}
-          alt="Adobe Creative Cloud"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
-        <img
-          src={Firebase}
-          alt="Firebase"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
+            justifyItems: "center",
+          }}
+        >
+          <img
+            src={React}
+            alt="React"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+          <img
+            src={MongoDB}
+            alt="MongoDB"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
 
-        <img
-          src={NodeJS}
-          alt="Node.js"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
-        <img
-          src={Bootstrap}
-          alt="Bootstrap"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
+          <img
+            src={TS}
+            alt="Typescript"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+          <img
+            src={Html5}
+            alt="Html5"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
 
-        <img
-          src={MUI}
-          alt="Material UI"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
-        <img
-          src={Figma}
-          alt="Figma"
-          style={imageStyling}
-          className="skills-logo"
-          onClick={(e) => handleOpenDialog(e)}
-        />
-      </div>
+          <img
+            src={Adobe}
+            alt="Adobe Creative Cloud"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+          <img
+            src={Firebase}
+            alt="Firebase"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+
+          <img
+            src={NodeJS}
+            alt="Node.js"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+          <img
+            src={Bootstrap}
+            alt="Bootstrap"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+
+          <img
+            src={MUI}
+            alt="Material UI"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+          <img
+            src={Figma}
+            alt="Figma"
+            style={imageStyling}
+            className="skills-logo"
+            onClick={(e) => handleOpenDialog(e)}
+          />
+        </div>
+      </section>
     </div>
   );
 }
