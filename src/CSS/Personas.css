@@ -75,6 +75,7 @@
 @media (max-width: 650px) {
   .personas-containers {
     justify-content: space-around;
+    align-items: center;
   }
   .persona {
     flex-direction: column;

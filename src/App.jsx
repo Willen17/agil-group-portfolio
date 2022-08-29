@@ -44,7 +44,7 @@ function App() {
       <section id="competences">
         <Skills />
       </section>
-      <section id="contact">
+      <section id="contact" style={{ marginTop: "2rem" }}>
         <ContactForm />
       </section>
       <section>

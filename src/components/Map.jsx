@@ -18,6 +18,7 @@ function Map() {
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
+        padding: "2rem",
       }}
     >
       <div
@@ -26,7 +27,7 @@ function Map() {
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
-          width: isMobile ? "95%" : "40%",
+          width: isMobile ? "95%" : "70%",
           boxShadow:
             "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
         }}
@@ -37,9 +38,9 @@ function Map() {
           width="100%"
           height="500"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen={true}
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>
