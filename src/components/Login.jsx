@@ -6,20 +6,28 @@ const Login = ({ isShowLogin }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [signUp, setSignUp] = useState(false);
   const [toggleSignup, setToggleSignup] = useState(false);
-  const [userDetails, setuserDetails] = useState([]);
+  const [user, setUser] = useState(() => {
+    const saved = localStorage.getItem("user");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "";
+  });
+  const [newUser, setNewUser] = useState(() => {
+    const saved = localStorage.getItem("newUser");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "";
+  });
 
   useEffect(() => {
-    localStorage.setItem("userDetails", JSON.stringify(userDetails));
-  }, [userDetails]);
+    localStorage.setItem("user", JSON.stringify(user));
+  }, [user]);
 
   useEffect(() => {
-    const userDetails = JSON.parse(localStorage.getItem("userDetails"));
-    if (userDetails) {
-      setuserDetails(userDetails);
-    }
-  }, [isLoggedIn]);
+    localStorage.setItem("newUser", JSON.stringify(newUser));
+  }, [newUser]);
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
+    console.log(user);
     setIsLoggedIn(true);
   };
 
@@ -47,7 +55,7 @@ const Login = ({ isShowLogin }) => {
         <div className={`${!isShowLogin ? "active" : ""} show`}>
           <div className="login-form">
             <div className="form-box">
-              <form>
+              <form onSubmit={handleSignup}>
                 <div className="logo-text">
                   <img src={login} alt="loginicon" style={{ width: "50px" }} />
                   <h3>Log In</h3>
@@ -58,6 +66,8 @@ const Login = ({ isShowLogin }) => {
                   id="username"
                   placeholder="Username"
                   required
+                  onChange={(e) => setUser(e.target.value)}
+                  value={user}
                 />
                 <input
                   type="password"
@@ -69,11 +79,7 @@ const Login = ({ isShowLogin }) => {
                   <p style={{ cursor: "pointer" }} onClick={handleToggleSignup}>
                     Create account
                   </p>
-                  <button
-                    onClick={handleLogin}
-                    className="login-btn"
-                    type="submit"
-                  >
+                  <button className="login-btn" type="submit">
                     LOGIN
                   </button>
                 </div>
@@ -95,6 +101,8 @@ const Login = ({ isShowLogin }) => {
                   name="username"
                   placeholder="Username"
                   required
+                  onChange={(e) => setNewUser(e.target.value)}
+                  value={newUser}
                 />
                 <input
                   type="password"
@@ -112,11 +120,7 @@ const Login = ({ isShowLogin }) => {
                   <p style={{ cursor: "pointer" }} onClick={handleToggleSignin}>
                     Already have an account? Sign in
                   </p>
-                  <button
-                    onClick={handleSignup}
-                    className="login-btn"
-                    type="submit"
-                  >
+                  <button className="login-btn" type="submit">
                     SIGN UP
                   </button>
                 </div>
