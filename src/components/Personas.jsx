@@ -29,11 +29,17 @@ function Personas() {
         alignItems: "center",
       }}
     >
-      <h1>Our Crew</h1>
-      <section style={{ position: "relative" }}>
-        <div className="persona-header"></div>
+      <section
+        style={{
+          position: "relative",
+          minHeight: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <div className="personas-containers">
-          <div className="persona">
+          <div className="persona" style={{ marginTop: "1rem" }}>
             <div className="persona-image">
               <img style={{ height: "100%" }} alt="profile" src={Adam}></img>
             </div>
@@ -102,7 +108,14 @@ function Personas() {
         </div>
       </section>
 
-      <section>
+      <section
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <div className="personas-containers">
           <div className="persona">
             <div className="persona-image">
@@ -181,7 +194,14 @@ function Personas() {
         </div>
       </section>
 
-      <section>
+      <section
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <div className="personas-containers">
           <div className="persona">
             <div className="persona-image">

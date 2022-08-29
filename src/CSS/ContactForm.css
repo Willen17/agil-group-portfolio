@@ -8,31 +8,61 @@ form {
 }
 
 form input {
-  width: 30rem;
+  width: 70%;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 15px 15px 15px 0px;
+  border-radius: 15px;
 }
 
 form select {
-  width: 30rem;
+  width: 70%;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 15px 15px 15px 0px;
+  border-radius: 15px;
 }
 
 form textarea {
-  width: 30rem;
+  width: 70%;
   margin: 1rem;
-  border-radius: 15px 15px 15px 0px;
+  border-radius: 15px;
 }
 
 button {
   margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #3333;
+  cursor: unset;
+}
+
+.swal-title,
+.swal-text {
+  font-family: "fredoka";
+  text-align: center;
+}
+
+.swal-button {
+  background-color: #ecad2b;
+  border-radius: 20px;
+
+  color: white;
+}
+
+.swal-icon--success__line {
+  background-color: #dd6f69;
+}
+
+.swal-icon--success {
+  border-color: #dd938f;
+}
+
+.swal-icon--success__ring {
+  border: 4px solid hsl(355deg 55% 69% / 20%);
 }
 
 @media (min-width: 1440px) {
-
   form {
     display: flex;
     flex-direction: column;

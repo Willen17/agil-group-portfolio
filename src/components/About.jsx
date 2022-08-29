@@ -35,14 +35,18 @@ export default function About() {
       }}
     >
       <div style={{ width: isMobile ? "50vw" : "30vw" }}>
-        <img src={Blob} alt="Who we are" style={{ width: "100%" }} />
+        <img
+          src={Blob}
+          alt="Who we are"
+          style={{ width: "100%", margin: "-1rem 0" }}
+        />
       </div>
       <div style={{ marginTop: "-5vw" }}>
         <p
           style={{
             fontFamily: "Fredoka",
             fontWeight: "lighter",
-            fontSize: "1.6rem",
+            fontSize: isMobile ? "1.6rem" : "2.2rem",
           }}
         >
           We're a team of designers, strategists and storytellers
@@ -51,7 +55,7 @@ export default function About() {
           style={{
             fontFamily: "Fredoka",
             fontWeight: "lighter",
-            fontSize: "1.8rem",
+            fontSize: isMobile ? "1.2rem" : "1.8rem",
             width: isMobile ? "90%" : "70%",
           }}
         >
@@ -81,7 +85,14 @@ export default function About() {
             alt="Development"
             style={{ height: "10vw", minHeight: "10rem" }}
           />
-          <p style={{ fontFamily: "Fredoka" }}>Development</p>
+          <p
+            style={{
+              fontFamily: "Fredoka",
+              fontSize: isMobile ? "1.4rem" : "2rem",
+            }}
+          >
+            Development
+          </p>
         </div>
         <div
           style={{
@@ -96,7 +107,14 @@ export default function About() {
             alt="Development"
             style={{ height: "10vw", minHeight: "10rem" }}
           />
-          <p style={{ fontFamily: "Fredoka" }}>Design</p>
+          <p
+            style={{
+              fontFamily: "Fredoka",
+              fontSize: isMobile ? "1.4rem" : "2rem",
+            }}
+          >
+            Design
+          </p>
         </div>
         <div
           style={{
@@ -111,7 +129,14 @@ export default function About() {
             alt="Development"
             style={{ height: "10vw", minHeight: "10rem" }}
           />
-          <p style={{ fontFamily: "Fredoka" }}>Management</p>
+          <p
+            style={{
+              fontFamily: "Fredoka",
+              fontSize: isMobile ? "1.4rem" : "2rem",
+            }}
+          >
+            Management
+          </p>
         </div>
       </div>
     </div>
