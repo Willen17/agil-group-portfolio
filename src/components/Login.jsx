@@ -56,10 +56,11 @@ const Login = ({ isOpen }) => {
     setIsLoggedIn(false);
   };
 
-  // const handleClose = () => {
-  //   isOpen(false);
-  //   console.log("closed popup");
-  // };
+  const handleClose = (e) => {
+    e.preventDefault();
+    console.log("closed popup");
+    setIsLoggedIn(true);
+  };
 
   return (
     <>
@@ -153,7 +154,7 @@ const Login = ({ isOpen }) => {
                     color: "black",
                   }}
                 >
-                  <h3 className="close" onClick={() => !isOpen}>
+                  <h3 className="close" onClick={handleClose}>
                     X
                   </h3>
                 </button>
