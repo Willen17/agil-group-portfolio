@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/Personas.css";
 import Adam from "../assets/Pics/Adam.png";
 import William from "../assets/Pics/William.png";
@@ -18,8 +18,21 @@ import mui from "../assets/Skills-icons/MUI.svg";
 import react from "../assets/Skills-icons/React.svg";
 import typescript from "../assets/Skills-icons/TS.svg";
 import javascript from "../assets/Skills-icons/JS.svg";
+import { PersonalModal } from "./PersonaModal";
 
 function Personas() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [dialogTitle, setDialogTitle] = useState("");
+
+  const handleOpenDialog = (e) => {
+    setDialogTitle(e.target.className);
+
+    setIsOpen(true);
+  };
+
+  const handleCloseDialog = () => {
+    setIsOpen(false);
+  };
   return (
     <div
       style={{
@@ -29,6 +42,11 @@ function Personas() {
         alignItems: "center",
       }}
     >
+      <PersonalModal
+        isOpen={isOpen}
+        handleClose={handleCloseDialog}
+        title={dialogTitle}
+      ></PersonalModal>
       <section
         style={{
           position: "relative",
@@ -72,6 +90,17 @@ function Personas() {
                   <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
                 </li>
               </ul>
+              <p
+                onClick={handleOpenDialog}
+                className="Adam"
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
+              >
+                Read more about Adam
+              </p>
             </ul>
           </div>
           <div className="persona-flipped">
@@ -103,11 +132,21 @@ function Personas() {
                   <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
                 </li>
               </ul>
+              <p
+                onClick={handleOpenDialog}
+                className="William"
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
+              >
+                Read more about William
+              </p>
             </ul>
           </div>
         </div>
       </section>
-
       <section
         style={{
           minHeight: "100vh",
@@ -146,6 +185,17 @@ function Personas() {
                   <img alt="figma" style={{ height: "100%" }} src={figma}></img>
                 </li>
               </ul>
+              <p
+                onClick={handleOpenDialog}
+                className="Jannie"
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
+              >
+                Read more about Jannie
+              </p>
             </ul>
           </div>
           <div className="persona-flipped">
@@ -189,11 +239,21 @@ function Personas() {
                   ></img>
                 </li>
               </ul>
+              <p
+                onClick={handleOpenDialog}
+                className="Miranda"
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
+              >
+                Read more about Miranda
+              </p>
             </ul>
           </div>
         </div>
       </section>
-
       <section
         style={{
           minHeight: "100vh",
@@ -236,6 +296,17 @@ function Personas() {
                   <img alt="adobe" style={{ height: "100%" }} src={adobe}></img>
                 </li>
               </ul>
+              <p
+                onClick={handleOpenDialog}
+                className="Love"
+                style={{
+                  margin: "1rem 0",
+                  cursor: "pointer",
+                  transition: " all .2s ease-in-out",
+                }}
+              >
+                What is Love
+              </p>
             </ul>
           </div>
           <div className="billgates">
