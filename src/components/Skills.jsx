@@ -62,7 +62,7 @@ function Skills() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-evenly",
-        height: isMedium ? (isMobile ? "210vh" : "150vh") : "auto",
+        height: "auto",
         marginBottom: "10vw",
       }}
     >
