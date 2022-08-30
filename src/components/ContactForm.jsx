@@ -1,23 +1,43 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import swal from "sweetalert";
 import "../CSS/ContactForm.css";
+import { Mail } from "./Mail";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const [developer, setDeveloper] = useState([]);
   const [submitButton, setSubmitButton] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    swal(
-      "Thanks for reaching out!",
-      `Your message has been sent. ${developer} will reply as soon as possible. We wish you a great day!`,
-      "success"
-    );
-  };
-
   const handleDeveloper = (e) => {
     setDeveloper(e.target.value);
     setSubmitButton(true);
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_plajm",
+        "contact_form",
+        form.current,
+        "p7DrHIV-1wmfbGSKP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          swal(
+            "Thanks for reaching out!",
+            `Your message has been sent. ${developer} will reply as soon as possible. We wish you a great day!`,
+            "success"
+          );
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div
@@ -31,12 +51,13 @@ function ContactForm() {
       className="contact-form"
     >
       <h2>CONTACT US</h2>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <select
           style={{ fontFamily: "Fredoka" }}
           value={developer}
           onChange={handleDeveloper}
           required
+          name="to_name"
         >
           {submitButton === false ? (
             <option
@@ -83,20 +104,23 @@ function ContactForm() {
           style={{ fontFamily: "Fredoka", fontSize: "1rem" }}
           type="text"
           placeholder="Name"
+          name="user_name"
           required
         />
         <input
           style={{ fontFamily: "Fredoka", fontSize: "1rem" }}
           type="email"
           placeholder="Email"
+          name="user_email"
           required
         />
         <textarea
           rows={5}
+          name="message"
           style={{ fontFamily: "Fredoka", padding: "1rem", fontSize: "1rem" }}
         ></textarea>
 
-        <button disabled={submitButton === false} onClick={handleSubmit}>
+        <button value="Send" type="submit" disabled={submitButton === false}>
           SEND
         </button>
       </form>
