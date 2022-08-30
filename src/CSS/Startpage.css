@@ -105,17 +105,29 @@ button {
 }
 
 @media (max-width: 800px) {
-  .start-page-right {
-    display: none;
-  }
-
   .startPageContainer {
     justify-content: center;
     padding: 0;
+    flex-direction: column;
+  }
+  .start-page-left ul {
+    padding: 2rem 0rem;
+  }
+
+  .start-page-left p {
+    font-size: 1.2rem;
+    margin: 2rem;
   }
 
   .start-page-left {
     width: 100%;
     text-align: center;
+  }
+  .start-page-left h1 {
+    margin: 3rem;
+  }
+
+  .start-page-right img {
+    height: 200px;
   }
 }
