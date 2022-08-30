@@ -50,16 +50,8 @@ button:disabled {
   color: white;
 }
 
-.swal-icon--success__line {
-  background-color: #dd6f69;
-}
-
-.swal-icon--success {
-  border-color: #dd938f;
-}
-
-.swal-icon--success__ring {
-  border: 4px solid hsl(355deg 55% 69% / 20%);
+.swal-button:not([disabled]):hover {
+  background-color: #f7d591;
 }
 
 @media (min-width: 1440px) {
