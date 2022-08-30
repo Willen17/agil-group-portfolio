@@ -13,7 +13,7 @@ function ContactForm() {
     setSubmitButton(true);
   };
 
-  const form = useRef();
+  const form = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,6 +33,9 @@ function ContactForm() {
             `Your message has been sent. ${developer} will reply as soon as possible. We wish you a great day!`,
             "success"
           );
+          setDeveloper([]);
+          setSubmitButton(false);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
