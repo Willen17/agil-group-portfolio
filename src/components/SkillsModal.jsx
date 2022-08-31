@@ -12,7 +12,7 @@ export const CustomDialog = ({
   isOpen,
   handleClose,
   title,
-  subtitle,
+
   children,
 }) => {
   const [skillText, setSkillText] = useState("");
@@ -67,7 +67,7 @@ export const CustomDialog = ({
     } else {
       setSkillText("");
     }
-  }, [title]);
+  }, [title, infoText]);
 
   return (
     <>
@@ -110,6 +110,6 @@ CustomDialog.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string,
+
   children: PropTypes.element.isRequired,
 };
