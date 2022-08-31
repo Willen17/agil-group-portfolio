@@ -5,6 +5,7 @@ import {
   DialogContentText,
   DialogActions,
   Button,
+  IconButton,
 } from "@mui/material";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
@@ -13,6 +14,7 @@ import William from "../assets/Pics/William.png";
 import Jannie from "../assets/Pics/Jannie.png";
 import Miranda from "../assets/Pics/Miranda.png";
 import Love from "../assets/Pics/Love.png";
+import { CloseSharp } from "@mui/icons-material";
 
 const infoText = [
   {
@@ -149,6 +151,12 @@ export const PersonalModal = ({ isOpen, handleClose, title, subtitle }) => {
         onClose={handleClose}
         aria-labelledby="max-width-dialog-title"
       >
+        <DialogActions>
+          <IconButton color="error" component="label" onClick={handleClose}>
+            <CloseSharp />
+          </IconButton>
+        </DialogActions>
+
         <div
           style={{
             width: "100%",
