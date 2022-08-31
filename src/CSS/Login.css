@@ -1,121 +1,119 @@
 .login-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 2.4rem;
-    left: 12.5%;
-    z-index: 3000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 2.4rem;
+  left: 12.5%;
+  z-index: 3000;
 }
 
 .form-box {
-    margin-top: 5rem;
-    width: 75vw;
-    height: 82vh;
+  margin-top: 5rem;
+  width: 75vw;
+  height: 82vh;
+
+  background: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-box input {
+  width: 15rem;
+  font-family: Fredoka;
+  font-size: 1.1rem;
+
+  border-radius: 15px;
+}
+
+.toggleSign:hover {
+  color: #ecad2b;
+}
+
+.login-btn {
+  width: 7rem;
+  background-color: #ecad2b;
+  color: white;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15pt;
+  font-weight: 700;
+  transition: 1s;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.login-btn:hover {
+  transform: scale(1.03);
+  letter-spacing: 4px;
+  background-color: #dd6f69;
+  color: white;
+}
+
+.show {
+  display: block;
+  transition: 800ms;
+  opacity: 1;
+}
+
+.show.active {
+  transform: translateY(100px) scale(0) rotateY(180deg);
+  opacity: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family: Fredoka;
+}
+
+p {
+  font-size: 0.9rem;
+  font-family: Fredoka;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40%;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.logo-text img {
+  margin-right: 5%;
+}
+
+.align-right {
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .form-box {
+    width: 50vw;
+    height: 80vh;
     margin-top: 10vh;
     background: white;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
+  }
 
-.form-box input {
-    width: 15rem;
-    font-family: Fredoka;
+  .form-box input {
+    width: 20rem;
     font-size: 1.1rem;
-    border-radius: 0;
-    border: none;
-}
+  }
 
-
-.login-btn {
-    width: 7rem;
-    background-color: #ECAD2B;
-    color: white;
-    margin-top: 5px;
-    border-radius: 20px;
-    border: none;
+  .login-btn {
     font-size: 15pt;
     font-weight: 700;
     transition: 1s;
     cursor: pointer;
     margin-bottom: 2rem;
-}
+  }
 
-.login-btn:hover {
-    transform: scale(1.03);
-    letter-spacing: 4px;
-    background-color: #DD6F69;
-    color: white;
-}
-
-.show {
-    display: block;
-    transition: 800ms;
-    opacity: 1;
-}
-
-.show.active {
-    transform: translateY(100px) scale(0) rotateY(180deg);
-    opacity: 0;
-}
-
-h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-    font-family: Fredoka;
-}
-
-p {
-    font-size: .9rem;
-    font-family: Fredoka;
-}
-
-.logo-text {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 40%;
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-}
-
-.logo-text img {
-    margin-right: 5%;
-}
-
-.align-right {
-    margin-left: 8rem;
-    text-align: center;
-}
-
-@media (min-width: 1440px) {
-    .form-box {
-        width: 50vw;
-        height: 70vh;
-        margin-top: 10vh;
-        background: white;
-        border-radius: 20px;
-        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .form-box input {
-        width: 20rem;
-        font-size: 1.1rem;
-    }
-
-    .login-btn {
-        font-size: 15pt;
-        font-weight: 700;
-        transition: 1s;
-        cursor: pointer;
-        margin-bottom: 2rem;
-    }
-
-    p {
-        font-size: 1.1rem;
-    }
-
-    .align-right {
-        margin-left: 10rem;
-    }
+  p {
+    font-size: 1.1rem;
+  }
 }

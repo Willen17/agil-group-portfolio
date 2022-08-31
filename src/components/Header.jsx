@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import "../CSS/Header.css";
 import burger from "../assets/Header/burgermenu.svg";
 import profile from "../assets/profile.png";
-import profileDesktop from "../assets/profileDesktop.png";
+import { LoginModal } from "./LoginModal";
 
-export default function Header({ handleLoginClick }) {
-  const handleClick = () => {
-    handleLoginClick();
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [nav, setNav] = useState(false);
+
+  const handleOpenDialog = () => {
+    setIsOpen(true);
   };
 
-  const [nav, setNav] = useState(false);
+  const handleCloseDialog = () => {
+    setIsOpen(false);
+  };
 
   const shownav = () => {
     if (nav === false) {
@@ -23,6 +28,7 @@ export default function Header({ handleLoginClick }) {
   return (
     <>
       <div className="header">
+        <LoginModal isOpen={isOpen} handleClose={handleCloseDialog} />
         <div>
           <a
             onClick={() => document.getElementById("start").scrollIntoView()}
@@ -69,9 +75,9 @@ export default function Header({ handleLoginClick }) {
             </li>
             <li>
               <img
-                onClick={handleClick}
-                src={profileDesktop}
-                alt="profileDesktopicon"
+                onClick={handleOpenDialog}
+                src={profile}
+                alt="profileicon"
                 style={{ width: "25px" }}
               />
             </li>
@@ -122,11 +128,11 @@ export default function Header({ handleLoginClick }) {
             </li>
             <li>
               <img
-                onClick={handleClick}
+                onClick={handleOpenDialog}
                 src={profile}
                 alt="profileicon"
                 style={{ width: "25px" }}
-              ></img>
+              />
             </li>
           </ul>
         </div>

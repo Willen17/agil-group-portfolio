@@ -64,3 +64,9 @@ section {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 790px) {
+  .App {
+    scroll-snap-type: y proximity;
+  }
+}

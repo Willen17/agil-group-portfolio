@@ -1,3 +1,4 @@
+import { CloseSharp } from "@mui/icons-material";
 import {
   Dialog,
   DialogTitle,
@@ -5,6 +6,7 @@ import {
   DialogContentText,
   DialogActions,
   Button,
+  IconButton,
 } from "@mui/material";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
@@ -83,6 +85,11 @@ export const CustomDialog = ({
         onClose={handleClose}
         aria-labelledby="max-width-dialog-title"
       >
+        <DialogActions>
+          <IconButton color="error" component="label" onClick={handleClose}>
+            <CloseSharp />
+          </IconButton>
+        </DialogActions>
         <div
           style={{
             width: "100%",
@@ -101,11 +108,6 @@ export const CustomDialog = ({
             {skillText}
           </p>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Close
-          </Button>
-        </DialogActions>
       </Dialog>
     </>
   );

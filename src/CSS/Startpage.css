@@ -38,6 +38,10 @@
   animation: slideIn 1s ease-in-out;
 }
 
+.start-page-left-mobile ul {
+  animation: unset;
+}
+
 @keyframes slideIn {
   0% {
     position: absolute;
@@ -56,6 +60,11 @@
   display: flex;
 
   animation: intro 1.2s ease-in-out;
+}
+
+.team-mobile {
+  height: 100%;
+  display: flex;
 }
 
 @keyframes intro {
@@ -105,29 +114,22 @@ button {
 }
 
 @media (max-width: 800px) {
-  .startPageContainer {
+  .startPageContainer-mobile {
     justify-content: center;
     padding: 0;
     flex-direction: column;
   }
-  .start-page-left ul {
-    padding: 2rem 0rem;
-  }
 
-  .start-page-left p {
+  .start-page-left-mobile p {
     font-size: 1.2rem;
     margin: 2rem;
   }
 
-  .start-page-left {
+  .start-page-left-mobile {
     width: 100%;
     text-align: center;
   }
-  .start-page-left h1 {
+  .start-page-left-mobile h1 {
     margin: 3rem;
-  }
-
-  .start-page-right img {
-    height: 200px;
   }
 }
