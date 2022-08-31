@@ -1,13 +1,12 @@
-import Header from "./components/Header.jsx";
-import StartPage from "./components/StartPage.jsx";
-import About from "./components/About.jsx";
-import Personas from "./components/Personas";
-import React from "react";
 import Navigation from "components/Navigation.jsx";
-import Skills from "./components/Skills.jsx";
-import Map from "./components/Map.jsx";
-import Footer from "./components/Footer.jsx";
+import About from "./components/About.jsx";
 import ContactForm from "./components/ContactForm.jsx";
+import Footer from "./components/Footer.jsx";
+import Header from "./components/Header.jsx";
+import Map from "./components/Map.jsx";
+import Personas from "./components/Personas";
+import Skills from "./components/Skills.jsx";
+import StartPage from "./components/StartPage.jsx";
 import "./CSS/App.css";
 
 function App() {

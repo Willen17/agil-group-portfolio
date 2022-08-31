@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "../CSS/Header.css";
+import { useState } from "react";
 import burger from "../assets/Header/burgermenu.svg";
 import profile from "../assets/profile.png";
+import "../CSS/Header.css";
 import { LoginModal } from "./LoginModal";
 
 export default function Header() {

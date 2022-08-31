@@ -1,22 +1,22 @@
 import Fast from "../assets/Skills-3-icons/Blazing-fast.svg";
-import MobileFirst from "../assets/Skills-3-icons/Mobile-first.svg";
 import Learning from "../assets/Skills-3-icons/Learning.svg";
+import MobileFirst from "../assets/Skills-3-icons/Mobile-first.svg";
 import "../CSS/Skills.css";
 
-import React from "../assets/Skills-icons/React.svg";
-import MongoDB from "../assets/Skills-icons/MongoDB.svg";
-import TS from "../assets/Skills-icons/TS.svg";
-import Html5 from "../assets/Skills-icons/Html5.svg";
 import Adobe from "../assets/Skills-icons/Adobe.svg";
-import Firebase from "../assets/Skills-icons/Firebase.svg";
-import NodeJS from "../assets/Skills-icons/NodeJS.svg";
 import Bootstrap from "../assets/Skills-icons/Bootstrap.svg";
-import MUI from "../assets/Skills-icons/MUI.svg";
 import Figma from "../assets/Skills-icons/Figma.svg";
+import Firebase from "../assets/Skills-icons/Firebase.svg";
+import Html5 from "../assets/Skills-icons/Html5.svg";
+import MongoDB from "../assets/Skills-icons/MongoDB.svg";
+import MUI from "../assets/Skills-icons/MUI.svg";
+import NodeJS from "../assets/Skills-icons/NodeJS.svg";
+import React from "../assets/Skills-icons/React.svg";
+import TS from "../assets/Skills-icons/TS.svg";
 
 import { CustomDialog } from "./SkillsModal";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Skills() {
   const [isMobile, setIsMobile] = useState(

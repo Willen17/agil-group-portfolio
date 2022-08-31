@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Blob from "../assets/whoweareBlobben.svg";
-import DevelopmentPic from "../assets/development.svg";
+import { useEffect, useState } from "react";
 import Design from "../assets/design.svg";
+import DevelopmentPic from "../assets/development.svg";
 import Management from "../assets/management.svg";
+import Blob from "../assets/whoweareBlobben.svg";
 
 export default function About() {
   const [isMobile, setIsMobile] = useState(

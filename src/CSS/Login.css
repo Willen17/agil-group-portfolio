@@ -44,6 +44,26 @@
   margin-bottom: 2rem;
 }
 
+.logout-btn {
+  background-color: #ecad2b;
+  color: white;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15pt;
+  font-weight: 700;
+  transition: 1s;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.logout-btn:hover {
+  transform: scale(1.03);
+  letter-spacing: 4px;
+  background-color: #dd6f69;
+  color: white;
+}
+
 .login-btn:hover {
   transform: scale(1.03);
   letter-spacing: 4px;

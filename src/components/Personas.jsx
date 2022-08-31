@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import "../CSS/Personas.css";
-import Adam from "../assets/Pics/Adam.png";
-import William from "../assets/Pics/William.png";
-import Jannie from "../assets/Pics/Jannie.png";
-import Miranda from "../assets/Pics/Miranda.png";
-import Love from "../assets/Pics/Love.png";
+import { useState } from "react";
 import BillGates from "../assets/Bill gates.svg";
+import Adam from "../assets/Pics/Adam.png";
+import Jannie from "../assets/Pics/Jannie.png";
+import Love from "../assets/Pics/Love.png";
+import Miranda from "../assets/Pics/Miranda.png";
+import William from "../assets/Pics/William.png";
+import "../CSS/Personas.css";
 
 import adobe from "../assets/Skills-icons/Adobe.svg";
 import bootstrap from "../assets/Skills-icons/Bootstrap.svg";
-import firebase from "../assets/Skills-icons/Firebase.svg";
-import figma from "../assets/Skills-icons/Figma.svg";
 import css from "../assets/Skills-icons/Css.svg";
+import figma from "../assets/Skills-icons/Figma.svg";
+import firebase from "../assets/Skills-icons/Firebase.svg";
 import html5 from "../assets/Skills-icons/Html5.svg";
+import javascript from "../assets/Skills-icons/JS.svg";
 import mongodb from "../assets/Skills-icons/MongoDB.svg";
 import mui from "../assets/Skills-icons/MUI.svg";
 import react from "../assets/Skills-icons/React.svg";
 import typescript from "../assets/Skills-icons/TS.svg";
-import javascript from "../assets/Skills-icons/JS.svg";
 import { PersonalModal } from "./PersonaModal";
 
 function Personas() {
@@ -97,6 +97,7 @@ function Personas() {
                   margin: "1rem 0",
                   cursor: "pointer",
                   transition: " all .2s ease-in-out",
+                  fontSize: "15px",
                 }}
               >
                 Read more about Adam
@@ -139,6 +140,7 @@ function Personas() {
                   margin: "1rem 0",
                   cursor: "pointer",
                   transition: " all .2s ease-in-out",
+                  fontSize: "15px",
                 }}
               >
                 Read more about William
@@ -192,6 +194,7 @@ function Personas() {
                   margin: "1rem 0",
                   cursor: "pointer",
                   transition: " all .2s ease-in-out",
+                  fontSize: "15px",
                 }}
               >
                 Read more about Jannie
@@ -246,6 +249,7 @@ function Personas() {
                   margin: "1rem 0",
                   cursor: "pointer",
                   transition: " all .2s ease-in-out",
+                  fontSize: "15px",
                 }}
               >
                 Read more about Miranda
@@ -303,6 +307,7 @@ function Personas() {
                   margin: "1rem 0",
                   cursor: "pointer",
                   transition: " all .2s ease-in-out",
+                  fontSize: "15px",
                 }}
               >
                 What is Love
