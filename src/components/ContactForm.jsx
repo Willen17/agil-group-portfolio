@@ -1,11 +1,11 @@
 import { useRef, useState } from "react";
 import swal from "sweetalert";
 import "../CSS/ContactForm.css";
-import { Mail } from "./Mail";
+
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-  const [developer, setDeveloper] = useState([]);
+  const [developer, setDeveloper] = useState("");
   const [submitButton, setSubmitButton] = useState(false);
 
   const handleDeveloper = (e) => {
@@ -33,7 +33,7 @@ function ContactForm() {
             `Your message has been sent. ${developer} will reply as soon as possible. We wish you a great day!`,
             "success"
           );
-          setDeveloper([]);
+          setDeveloper("");
           setSubmitButton(false);
           form.current.reset();
         },

@@ -73,6 +73,7 @@ const Login = ({ isShowLogin }) => {
                   type="password"
                   name="password"
                   placeholder="Password"
+                  autoComplete="true"
                   required
                 />
                 <div className="align-right">
