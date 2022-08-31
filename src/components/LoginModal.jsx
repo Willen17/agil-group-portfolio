@@ -1,21 +1,18 @@
-import { CloseSharp, PhotoCamera } from "@mui/icons-material";
+import { CloseSharp } from "@mui/icons-material";
 import {
   Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
   DialogActions,
-  Button,
+  DialogContent,
   IconButton,
 } from "@mui/material";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import login from "../assets/login.png";
 import swal from "sweetalert";
+import login from "../assets/login.png";
 
-import "../CSS/Login.css";
 import henrik from "../assets/henke.jpg";
 import profileblob from "../assets/profileblob.svg";
+import "../CSS/Login.css";
 
 export const LoginModal = ({ isOpen, handleClose }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -103,7 +100,6 @@ export const LoginModal = ({ isOpen, handleClose }) => {
 
     console.log("clicked sign out ");
 
-    let timerInterval;
     swal("You are now logged out!", "", "success");
   };
 
@@ -129,7 +125,13 @@ export const LoginModal = ({ isOpen, handleClose }) => {
         }}
       >
         {user && user.isLoggedIn === true ? (
-          <p style={{ fontFamily: "Fredoka", fontSize: "2.5rem", margin: "0" }}>
+          <p
+            style={{
+              fontFamily: "Fredoka",
+              fontSize: "2.5rem",
+              margin: "0rem 0rem 1rem 0rem",
+            }}
+          >
             Hello {user.username}
           </p>
         ) : (
@@ -158,7 +160,7 @@ export const LoginModal = ({ isOpen, handleClose }) => {
               >
                 <div
                   style={{
-                    height: "8rem",
+                    height: "10rem",
                     background: `url(${profileblob})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "contain",
@@ -172,14 +174,16 @@ export const LoginModal = ({ isOpen, handleClose }) => {
                     src={henrik}
                     style={{
                       height: "60%",
-
                       borderRadius: "100%",
                     }}
+                    alt="profilepicture"
                   ></img>
                 </div>
               </div>
-              <p style={{ cursor: "pointer" }}>Handle your account</p>
-              <button className="login-btn" onClick={handleSignOut}>
+              <p style={{ cursor: "pointer", margin: "1rem 0" }}>
+                Handle your account
+              </p>
+              <button className="logout-btn" onClick={handleSignOut}>
                 SIGN OUT
               </button>
             </div>

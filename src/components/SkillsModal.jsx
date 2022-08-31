@@ -1,11 +1,8 @@
 import { CloseSharp } from "@mui/icons-material";
 import {
   Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
   DialogActions,
-  Button,
+  DialogContent,
   IconButton,
 } from "@mui/material";
 import PropTypes from "prop-types";

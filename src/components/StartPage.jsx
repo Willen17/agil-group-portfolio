@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import "../CSS/Startpage.css";
+import { useEffect, useState } from "react";
 import team from "../assets/Pics/Team.svg";
+import "../CSS/Startpage.css";
 
 function StartPage() {
   const [isMobile, setIsMobile] = useState(

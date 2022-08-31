@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Facebook from "../assets/Footer-icons/Facebook.svg";
 import Instagram from "../assets/Footer-icons/Instagram.svg";
 import Linkedin from "../assets/Footer-icons/LinkedIn.svg";

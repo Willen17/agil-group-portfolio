@@ -1,20 +1,17 @@
+import { CloseSharp } from "@mui/icons-material";
 import {
   Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
   DialogActions,
-  Button,
+  DialogContent,
   IconButton,
 } from "@mui/material";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Adam from "../assets/Pics/Adam.png";
-import William from "../assets/Pics/William.png";
 import Jannie from "../assets/Pics/Jannie.png";
-import Miranda from "../assets/Pics/Miranda.png";
 import Love from "../assets/Pics/Love.png";
-import { CloseSharp } from "@mui/icons-material";
+import Miranda from "../assets/Pics/Miranda.png";
+import William from "../assets/Pics/William.png";
 
 const infoText = [
   {
@@ -128,7 +125,7 @@ export const PersonalModal = ({ isOpen, handleClose, title, subtitle }) => {
   const [skillText, setSkillText] = useState(<p>empty</p>);
   const [currentImg, setCurrentImg] = useState(Adam);
 
-  const getSkillText = () => {
+  useEffect(() => {
     if (title) {
       let newText = infoText.find((object) => object.name === title);
       setCurrentImg(newText.img);
@@ -136,10 +133,6 @@ export const PersonalModal = ({ isOpen, handleClose, title, subtitle }) => {
     } else {
       setSkillText(<></>);
     }
-  };
-
-  useEffect(() => {
-    getSkillText();
   }, [title]);
 
   return (
