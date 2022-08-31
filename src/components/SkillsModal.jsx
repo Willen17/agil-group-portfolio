@@ -60,17 +60,13 @@ export const CustomDialog = ({
     },
   ];
 
-  const getSkillText = () => {
+  useEffect(() => {
     if (title) {
       let newText = infoText.find((object) => object.title === title);
       setSkillText(newText.text);
     } else {
       setSkillText("");
     }
-  };
-
-  useEffect(() => {
-    getSkillText();
   }, [title]);
 
   return (
