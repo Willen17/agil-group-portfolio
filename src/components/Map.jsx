@@ -39,7 +39,7 @@ function Map() {
           height="500"
           style={{ border: 0 }}
           allowFullScreen={true}
-          loading="lazy"
+          loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
