@@ -43,6 +43,9 @@ function Map() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <h3 style={{ fontFamily: "Fredoka", textAlign: "center" }}>
+        Anders Personsgatan 18 <br /> 416 64 Göteborg
+      </h3>
     </div>
   );
 }

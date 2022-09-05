@@ -17,7 +17,7 @@ function Footer() {
     <div>
       <div
         style={{
-          padding: "2rem",
+          paddingBottom: "2rem",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
