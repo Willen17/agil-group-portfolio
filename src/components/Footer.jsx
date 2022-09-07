@@ -17,7 +17,6 @@ function Footer() {
     <div>
       <div
         style={{
-          paddingBottom: "2rem",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -44,6 +43,9 @@ function Footer() {
             src={Linkedin}
           />
         </a>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <p>©2022 All rights served</p>
       </div>
     </div>
   );

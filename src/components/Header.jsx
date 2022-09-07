@@ -97,7 +97,11 @@ export default function Header() {
                   document.getElementById("about").scrollIntoView()
                 }
                 href="/#about"
-                style={{ textDecoration: "none", color: "#18112C" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#18112C",
+                  fontSize: ".9rem",
+                }}
               >
                 About us
               </a>
@@ -109,7 +113,11 @@ export default function Header() {
                   document.getElementById("competences").scrollIntoView()
                 }
                 href="/#competences"
-                style={{ textDecoration: "none", color: "#18112C" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#18112C",
+                  fontSize: ".9rem",
+                }}
               >
                 Competences
               </a>
@@ -121,7 +129,11 @@ export default function Header() {
                   document.getElementById("contact").scrollIntoView()
                 }
                 href="/#contact"
-                style={{ textDecoration: "none", color: "#18112C" }}
+                style={{
+                  textDecoration: "none",
+                  color: "#18112C",
+                  fontSize: ".9rem",
+                }}
               >
                 Contact
               </a>
